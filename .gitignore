@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/safemine.db
+data/uploads/*
+data/outputs/*
+data/samples/*.mp4
+data/samples/*.mov
+data/samples/*.avi
+data/ground_truth/frames/
+data/research/incidents.csv
+datasets/
+training/runs/
+models/*.pt
+*.pt

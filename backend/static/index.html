@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SafeMine Monitor</title>
+<link rel="stylesheet" href="/static/css/style.css">
+<script src="/static/vendor/chart.umd.min.js"></script>
+<script>
+  // fallback to CDN if the local copy has not been downloaded yet
+  if (!window.Chart) document.write('<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"><\/script>');
+</script>
+</head>
+<body>
+<aside class="sidebar">
+  <div class="brand"><span class="logo">⛑</span><div><b>SafeMine</b><small>Monitor</small></div></div>
+  <nav>
+    <a data-page="dashboard" class="active">▣ Dashboard</a>
+    <a data-page="upload">⇪ Upload &amp; Detect</a>
+    <a data-page="monitor">◉ Monitoring</a>
+    <a data-page="records">☰ Detection Records</a>
+    <a data-page="risk">⚠ Risk Assessment</a>
+    <a data-page="analytics">∑ Python Analytics</a>
+    <a data-page="egt">⟳ EGT Simulation</a>
+    <a data-page="validation">✓ Validation</a>
+    <a data-page="about">ⓘ Methodology</a>
+  </nav>
+  <div class="model-box" id="modelBox">Model: loading…</div>
+</aside>
+
+<main>
+<!-- ============================================================ DASHBOARD -->
+<section id="page-dashboard" class="page active">
+  <header class="page-head"><h1>Monitoring Overview</h1>
+    <p>Summary of unsafe-behaviour identification results from all processed images and videos.</p></header>
+  <div class="kpis">
+    <div class="kpi"><span>Media analysed</span><b id="kJobs">–</b></div>
+    <div class="kpi"><span>Unsafe behaviour events</span><b id="kEvents">–</b></div>
+    <div class="kpi danger"><span>High-risk events</span><b id="kHigh">–</b></div>
+    <div class="kpi"><span>Workers observed</span><b id="kWorkers">–</b></div>
+    <div class="kpi"><span>Unsafe Behaviour Rate</span><b id="kUBR">–</b></div>
+    <div class="kpi"><span>Helmet compliance</span><b id="kHelmet">–</b></div>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>Unsafe behaviour distribution</h3><canvas id="chCat"></canvas></div>
+    <div class="card"><h3>Risk level statistics</h3><canvas id="chLevel"></canvas></div>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>Recent detections</h3><div id="recent" class="recent"></div></div>
+    <div class="card"><h3>Monitoring history</h3><table class="tbl" id="histTbl"></table></div>
+  </div>
+</section>
+
+<!-- ============================================================ UPLOAD -->
+<section id="page-upload" class="page">
+  <header class="page-head"><h1>Image / Video Input</h1>
+    <p>Upload a site image or video, or choose a sample. Optionally draw a restricted zone on the first frame,
+       then submit it to the Python computer-vision pipeline.</p></header>
+  <div class="grid2">
+    <div class="card">
+      <h3>1 · Select input</h3>
+      <label class="lbl">Upload file (mp4 / avi / mov / jpg / png)</label>
+      <input type="file" id="fileInput" accept="video/*,image/*">
+      <div class="or">— or —</div>
+      <label class="lbl">Sample media (data/samples)</label>
+      <select id="sampleSelect"><option value="">(none)</option></select>
+      <label class="lbl">Virtual camera / location label</label>
+      <input type="text" id="cameraInput" value="CAM-01 Open-Pit Haul Road">
+      <h3 style="margin-top:18px">3 · Submit</h3>
+      <button class="btn primary" id="submitBtn">Run detection ▶</button>
+      <div id="uploadMsg" class="msg"></div>
+    </div>
+    <div class="card">
+      <h3>2 · Restricted zone (optional)</h3>
+      <p class="hint">Click on the frame to add polygon points (≥3). Workers whose feet are inside are flagged
+        as <i>Entry into restricted area</i>.</p>
+      <div class="zone-wrap"><canvas id="zoneCanvas" width="640" height="360"></canvas></div>
+      <button class="btn" id="clearZone">Clear zone</button> <span id="zoneInfo" class="hint"></span>
+      <video id="hiddenVideo" style="display:none" muted></video>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ MONITOR -->
+<section id="page-monitor" class="page">
+  <header class="page-head"><h1>Monitoring <span class="badge" id="monBadge">IDLE</span></h1>
+    <p id="monSub">Select a job in Detection Records or submit a new input.</p></header>
+  <div class="monitor">
+    <div class="video-card card">
+      <div class="progress"><div id="progBar"></div></div>
+      <img id="streamImg" alt="">
+      <div class="video-tools">
+        <button class="btn" id="replayBtn" disabled>⟲ Replay annotated result</button>
+        <a class="btn" id="downloadBtn" target="_blank">⬇ Annotated file</a>
+        <span id="monStatus" class="hint"></span>
+      </div>
+    </div>
+    <div class="card side">
+      <h3>Safety metadata (per worker)</h3>
+      <div id="workerPanel" class="workers"></div>
+    </div>
+  </div>
+  <div class="card"><h3>Detected unsafe-behaviour events</h3>
+    <table class="tbl" id="eventTbl"></table></div>
+</section>
+
+<!-- ============================================================ RECORDS -->
+<section id="page-records" class="page">
+  <header class="page-head"><h1>Detection Records</h1><p>All processed inputs stored in the database.</p></header>
+  <div class="card"><table class="tbl" id="jobsTbl"></table></div>
+</section>
+
+<!-- ============================================================ RISK -->
+<section id="page-risk" class="page">
+  <header class="page-head"><h1>Risk Assessment &amp; Classification</h1>
+    <p>HIRARC semi-quantitative matrix: Risk = Likelihood × Severity. Severity is fixed per behaviour category
+       (literature-based); Likelihood is derived from observed exposure in the video.</p></header>
+  <div class="grid2">
+    <div class="card"><h3>Risk matrix (event counts per cell)</h3><div id="matrix"></div>
+      <p class="hint">Bands (DOSH HIRARC 2008): 1–4 Low · 5–12 Medium · 15–25 High</p></div>
+    <div class="card"><h3>Severity basis per category</h3><div id="sevTbl"></div></div>
+  </div>
+  <div class="card"><h3>Category risk &amp; recommended controls (ISO 45001 hierarchy of controls)</h3>
+    <table class="tbl" id="recTbl"></table></div>
+</section>
+
+<!-- ============================================================ ANALYTICS -->
+<section id="page-analytics" class="page">
+  <header class="page-head"><h1>Python-Based Analytics <small>(Phase 1)</small></h1>
+    <p>Pandas/NumPy/SciPy analysis of research incident data and of the detection records.</p></header>
+  <div id="dataBanner" class="banner"></div>
+  <div class="card"><label class="lbl">Upload research data CSV (schema: see data/research/README.md)</label>
+    <input type="file" id="csvInput" accept=".csv"> <button class="btn" id="csvBtn">Upload &amp; analyse</button></div>
+  <div class="grid2">
+    <div class="card"><h3>Pareto of unsafe-act categories</h3><canvas id="chPareto"></canvas></div>
+    <div class="card"><h3>Monthly trend of records</h3><canvas id="chTrend"></canvas></div>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>Behavioural risk indicators (incident data)</h3><table class="tbl" id="briTbl"></table></div>
+    <div class="card"><h3>Experience × category (χ² test)</h3><div id="chiBox"></div><table class="tbl" id="xtTbl"></table></div>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>Severity distribution</h3><canvas id="chSev"></canvas></div>
+    <div class="card"><h3>Indicators from the vision system</h3><table class="tbl" id="cvInd"></table></div>
+  </div>
+  <div class="card"><h3>Data quality report</h3><pre id="dq"></pre></div>
+</section>
+
+<!-- ============================================================ EGT -->
+<section id="page-egt" class="page">
+  <header class="page-head"><h1>Evolutionary Game Theory Simulation</h1>
+    <p>Tripartite game Worker × Supervisor × Management. Replicator dynamics solved numerically (RK4) in Python.
+       Phase-2 link: detector recall <i>r</i> and coverage <i>φ</i> raise detection probability; observed Unsafe
+       Behaviour Rate sets the initial worker state.</p></header>
+  <div class="egt">
+    <div class="card params">
+      <h3>Scenario</h3><select id="scenarioSel"></select>
+      <button class="btn" id="calibBtn">Use calibration from CV data</button>
+      <div id="calibInfo" class="hint"></div>
+      <h3>Initial state</h3>
+      <div class="pgrid" id="initGrid"></div>
+      <h3>Parameters</h3>
+      <div class="pgrid" id="paramGrid"></div>
+      <h3>Sensitivity</h3>
+      <select id="sensParam"></select>
+      <div class="pgrid"><label>from<input id="sensLo" type="number" value="0" step="any"></label>
+        <label>to<input id="sensHi" type="number" value="12" step="any"></label></div>
+      <button class="btn primary" id="runEgt">Run simulation ▶</button>
+    </div>
+    <div>
+      <div class="card"><h3>Evolutionary dynamics x(t), y(t), z(t)</h3><canvas id="chEgt"></canvas>
+        <p class="hint" id="egtFinal"></p></div>
+      <div class="grid2">
+        <div class="card"><h3>Sensitivity analysis</h3><canvas id="chSens"></canvas></div>
+        <div class="card"><h3>Stability of pure-strategy equilibria (Jacobian)</h3><table class="tbl" id="eqTbl"></table></div>
+      </div>
+      <div class="card"><h3>Payoff matrix (pure strategy profiles)</h3><table class="tbl" id="payTbl"></table></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ VALIDATION -->
+<section id="page-validation" class="page">
+  <header class="page-head"><h1>Preliminary Validation</h1>
+    <p>Compare detected events with manually labelled ground truth (category, start_s, end_s).</p></header>
+  <div class="card">
+    <label class="lbl">Job</label><select id="valJob"></select>
+    <label class="lbl">Ground-truth CSV</label><input type="file" id="gtInput" accept=".csv">
+    <button class="btn primary" id="valBtn">Evaluate</button>
+  </div>
+  <div class="grid2">
+    <div class="card"><h3>Event-level metrics</h3><table class="tbl" id="valTbl"></table></div>
+    <div class="card"><h3>Model-level metrics (test split)</h3><table class="tbl" id="mvTbl"></table>
+      <p class="hint">Generated by <code>python scripts/evaluate_model.py</code></p></div>
+  </div>
+</section>
+
+<!-- ============================================================ ABOUT -->
+<section id="page-about" class="page">
+  <header class="page-head"><h1>Research Framework</h1></header>
+  <div class="card about">
+    <img src="/static/architecture.png" alt="architecture" onerror="this.style.display='none'">
+    <h3>Phase 1 — Computational Analysis &amp; Behavioural Modelling</h3>
+    <p>Research data → preprocessing → EDA → behavioural risk indicators → tripartite EGT replicator dynamics.</p>
+    <h3>Phase 2 — Experimental Identification &amp; Intelligent Recognition</h3>
+    <p>Image/video → YOLO detection + ByteTrack → rule-based unsafe-behaviour identification → temporal events →
+       HIRARC risk classification → validation against ground truth.</p>
+    <h3>Integration</h3>
+    <p>Phase-2 outputs (Unsafe Behaviour Rate, detector recall) calibrate Phase-1 EGT parameters; Phase-1
+       indicators justify the severity weights used in Phase-2 risk classification.</p>
+    <p class="hint">Preliminary research prototype — results are for academic demonstration and are not a certified
+      safety system.</p>
+  </div>
+</section>
+</main>
+<script src="/static/js/app.js"></script>
+</body>
+</html>

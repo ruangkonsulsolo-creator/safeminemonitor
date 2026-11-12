@@ -1,0 +1,601 @@
+record_id,date,site_type,activity,occupation,experience_years,unsafe_act_category,injury_degree,severity_weight,days_lost,shift,narrative
+SYN-00000,2024-05-24,Open-pit,Maintenance,Supervisor,2.0,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00001,2023-09-28,Quarry,Material handling,Mechanic,4.9,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00002,2023-09-16,Quarry,Blasting preparation,Supervisor,4.8,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,18,Day,SYNTHETIC RECORD - demo only
+SYN-00003,2024-06-27,Quarry,Blasting preparation,Driller,4.1,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,57,Day,SYNTHETIC RECORD - demo only
+SYN-00004,2024-05-03,Open-pit,Loading,Surveyor,1.4,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,17,Night,SYNTHETIC RECORD - demo only
+SYN-00005,2024-05-13,Open-pit,Material handling,Loader operator,5.5,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,0,Night,SYNTHETIC RECORD - demo only
+SYN-00006,2023-12-02,Open-pit,Hauling,Loader operator,1.2,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00007,2024-02-13,Open-pit,Maintenance,Haul truck driver,5.7,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00008,2023-06-20,Open-pit,Material handling,Driller,2.6,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00009,2024-04-29,Open-pit,Blasting preparation,Surveyor,3.5,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,11,Day,SYNTHETIC RECORD - demo only
+SYN-00010,2024-01-01,Open-pit,Blasting preparation,Electrician,7.1,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00011,2023-03-28,Quarry,Drilling,Supervisor,0.9,Entry into restricted / hazardous area,DAYS AWAY FROM WORK ONLY,3,17,Night,SYNTHETIC RECORD - demo only
+SYN-00012,2023-07-18,Open-pit,Blasting preparation,Supervisor,8.4,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00013,2024-07-07,Underground,Walking / travelling,Blaster,3.0,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00014,2023-04-16,Open-pit,Loading,Mechanic,7.4,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,11,Day,SYNTHETIC RECORD - demo only
+SYN-00015,2024-11-30,Open-pit,Blasting preparation,Surveyor,7.9,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00016,2023-07-14,Open-pit,Maintenance,Labourer,2.1,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,14,Night,SYNTHETIC RECORD - demo only
+SYN-00017,2023-03-21,Underground,Hauling,Driller,4.4,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00018,2023-09-28,Underground,Blasting preparation,Surveyor,1.3,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00019,2023-05-01,Open-pit,Drilling,Blaster,4.8,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,8,Day,SYNTHETIC RECORD - demo only
+SYN-00020,2024-11-14,Open-pit,Hauling,Loader operator,8.2,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00021,2024-09-30,Open-pit,Drilling,Driller,2.2,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00022,2023-03-30,Open-pit,Inspection,Electrician,3.2,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,62,Night,SYNTHETIC RECORD - demo only
+SYN-00023,2023-04-01,Quarry,Hauling,Blaster,1.4,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,4,Night,SYNTHETIC RECORD - demo only
+SYN-00024,2023-03-19,Open-pit,Walking / travelling,Blaster,3.6,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,75,Day,SYNTHETIC RECORD - demo only
+SYN-00025,2024-08-28,Underground,Blasting preparation,Driller,6.3,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,5,Day,SYNTHETIC RECORD - demo only
+SYN-00026,2023-06-30,Open-pit,Inspection,Electrician,0.8,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00027,2023-04-16,Quarry,Maintenance,Loader operator,9.1,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,55,Day,SYNTHETIC RECORD - demo only
+SYN-00028,2023-02-08,Open-pit,Maintenance,Electrician,2.4,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,58,Day,SYNTHETIC RECORD - demo only
+SYN-00029,2023-05-13,Open-pit,Loading,Driller,2.7,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00030,2023-02-07,Quarry,Walking / travelling,Haul truck driver,1.8,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,7,Day,SYNTHETIC RECORD - demo only
+SYN-00031,2023-10-09,Underground,Loading,Driller,13.1,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,50,Day,SYNTHETIC RECORD - demo only
+SYN-00032,2023-08-28,Open-pit,Loading,Electrician,0.7,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,21,Day,SYNTHETIC RECORD - demo only
+SYN-00033,2024-08-10,Open-pit,Material handling,Mechanic,15.3,Entry into restricted / hazardous area,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00034,2023-03-11,Underground,Maintenance,Haul truck driver,4.3,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,22,Night,SYNTHETIC RECORD - demo only
+SYN-00035,2024-08-03,Quarry,Hauling,Driller,13.4,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,16,Day,SYNTHETIC RECORD - demo only
+SYN-00036,2023-12-07,Open-pit,Walking / travelling,Electrician,6.6,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,19,Day,SYNTHETIC RECORD - demo only
+SYN-00037,2023-03-06,Underground,Walking / travelling,Blaster,7.7,Other / unclassified,DAYS RESTRICTED ACTIVITY ONLY,2,5,Day,SYNTHETIC RECORD - demo only
+SYN-00038,2024-11-14,Open-pit,Walking / travelling,Blaster,4.4,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,7,Night,SYNTHETIC RECORD - demo only
+SYN-00039,2023-03-31,Open-pit,Hauling,Electrician,12.3,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00040,2023-12-01,Open-pit,Hauling,Driller,1.0,Unsafe interaction with machinery,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00041,2024-09-02,Open-pit,Walking / travelling,Supervisor,5.2,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,17,Day,SYNTHETIC RECORD - demo only
+SYN-00042,2023-04-15,Underground,Material handling,Loader operator,7.3,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00043,2023-06-24,Underground,Loading,Haul truck driver,0.3,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,67,Night,SYNTHETIC RECORD - demo only
+SYN-00044,2024-01-04,Underground,Maintenance,Mechanic,1.5,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,20,Night,SYNTHETIC RECORD - demo only
+SYN-00045,2024-12-16,Underground,Maintenance,Haul truck driver,2.2,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,16,Night,SYNTHETIC RECORD - demo only
+SYN-00046,2023-05-14,Quarry,Maintenance,Labourer,9.5,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,19,Day,SYNTHETIC RECORD - demo only
+SYN-00047,2024-02-26,Underground,Drilling,Mechanic,7.2,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,23,Day,SYNTHETIC RECORD - demo only
+SYN-00048,2023-04-08,Open-pit,Hauling,Driller,17.0,Unsafe interaction with machinery,FATALITY,5,0,Day,SYNTHETIC RECORD - demo only
+SYN-00049,2023-10-26,Open-pit,Inspection,Mechanic,4.9,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00050,2024-02-18,Underground,Maintenance,Mechanic,10.6,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,17,Night,SYNTHETIC RECORD - demo only
+SYN-00051,2023-09-21,Open-pit,Material handling,Electrician,1.8,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,60,Night,SYNTHETIC RECORD - demo only
+SYN-00052,2023-03-26,Open-pit,Material handling,Surveyor,2.4,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00053,2023-01-11,Underground,Walking / travelling,Surveyor,5.7,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,57,Day,SYNTHETIC RECORD - demo only
+SYN-00054,2023-08-16,Underground,Loading,Electrician,12.9,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00055,2023-05-02,Underground,Inspection,Supervisor,3.9,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,16,Night,SYNTHETIC RECORD - demo only
+SYN-00056,2023-02-28,Underground,Hauling,Blaster,7.6,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,2,Night,SYNTHETIC RECORD - demo only
+SYN-00057,2023-12-24,Open-pit,Walking / travelling,Labourer,0.6,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00058,2024-04-18,Underground,Material handling,Electrician,1.5,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,7,Day,SYNTHETIC RECORD - demo only
+SYN-00059,2024-07-15,Quarry,Drilling,Labourer,6.6,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,21,Night,SYNTHETIC RECORD - demo only
+SYN-00060,2024-10-31,Underground,Blasting preparation,Loader operator,2.3,Unsafe interaction with machinery,FATALITY,5,0,Day,SYNTHETIC RECORD - demo only
+SYN-00061,2023-11-24,Open-pit,Loading,Mechanic,2.6,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,17,Night,SYNTHETIC RECORD - demo only
+SYN-00062,2024-10-21,Underground,Drilling,Supervisor,11.6,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,49,Day,SYNTHETIC RECORD - demo only
+SYN-00063,2024-12-19,Open-pit,Material handling,Electrician,6.0,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00064,2023-12-06,Quarry,Loading,Blaster,3.2,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,19,Day,SYNTHETIC RECORD - demo only
+SYN-00065,2023-01-27,Open-pit,Inspection,Haul truck driver,7.4,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00066,2023-06-21,Underground,Loading,Surveyor,8.3,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,17,Day,SYNTHETIC RECORD - demo only
+SYN-00067,2024-09-14,Open-pit,Material handling,Surveyor,12.4,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00068,2024-06-07,Underground,Maintenance,Supervisor,4.6,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00069,2024-10-30,Open-pit,Drilling,Loader operator,0.8,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,57,Day,SYNTHETIC RECORD - demo only
+SYN-00070,2023-09-08,Open-pit,Inspection,Supervisor,1.4,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,66,Day,SYNTHETIC RECORD - demo only
+SYN-00071,2024-10-25,Open-pit,Inspection,Electrician,0.9,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,16,Day,SYNTHETIC RECORD - demo only
+SYN-00072,2024-09-30,Open-pit,Hauling,Mechanic,5.4,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,9,Day,SYNTHETIC RECORD - demo only
+SYN-00073,2024-01-10,Open-pit,Loading,Haul truck driver,2.1,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,25,Day,SYNTHETIC RECORD - demo only
+SYN-00074,2024-01-12,Open-pit,Hauling,Haul truck driver,1.3,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00075,2023-10-15,Open-pit,Loading,Haul truck driver,2.2,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00076,2024-07-23,Underground,Maintenance,Driller,1.1,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00077,2024-11-10,Open-pit,Blasting preparation,Labourer,13.1,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00078,2023-01-23,Open-pit,Walking / travelling,Mechanic,5.6,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00079,2024-03-27,Open-pit,Inspection,Electrician,5.4,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,6,Night,SYNTHETIC RECORD - demo only
+SYN-00080,2023-06-07,Open-pit,Walking / travelling,Driller,7.9,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,8,Day,SYNTHETIC RECORD - demo only
+SYN-00081,2024-05-31,Underground,Material handling,Driller,1.9,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,71,Day,SYNTHETIC RECORD - demo only
+SYN-00082,2024-01-06,Quarry,Drilling,Haul truck driver,1.1,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,16,Night,SYNTHETIC RECORD - demo only
+SYN-00083,2023-07-19,Open-pit,Blasting preparation,Mechanic,4.3,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00084,2024-03-10,Open-pit,Material handling,Surveyor,0.8,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00085,2024-05-09,Underground,Material handling,Mechanic,1.9,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,58,Day,SYNTHETIC RECORD - demo only
+SYN-00086,2023-03-10,Quarry,Walking / travelling,Blaster,6.0,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,17,Night,SYNTHETIC RECORD - demo only
+SYN-00087,2024-10-28,Open-pit,Drilling,Labourer,7.7,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,57,Night,SYNTHETIC RECORD - demo only
+SYN-00088,2023-03-18,Quarry,Walking / travelling,Surveyor,6.7,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Night,SYNTHETIC RECORD - demo only
+SYN-00089,2024-06-09,Quarry,Walking / travelling,Blaster,10.0,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,56,Day,SYNTHETIC RECORD - demo only
+SYN-00090,2023-12-08,Open-pit,Drilling,Blaster,9.8,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00091,2024-07-04,Quarry,Drilling,Driller,2.1,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00092,2023-12-18,Quarry,Loading,Mechanic,4.8,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00093,2024-12-19,Quarry,Drilling,Supervisor,4.9,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00094,2023-03-12,Underground,Walking / travelling,Mechanic,6.9,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00095,2024-06-20,Open-pit,Material handling,Blaster,6.2,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,14,Night,SYNTHETIC RECORD - demo only
+SYN-00096,2024-10-16,Open-pit,Blasting preparation,Driller,1.8,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00097,2023-09-05,Open-pit,Walking / travelling,Driller,11.0,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,12,Night,SYNTHETIC RECORD - demo only
+SYN-00098,2023-12-25,Open-pit,Blasting preparation,Labourer,3.1,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Night,SYNTHETIC RECORD - demo only
+SYN-00099,2024-02-09,Open-pit,Loading,Driller,14.5,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,21,Day,SYNTHETIC RECORD - demo only
+SYN-00100,2023-05-17,Quarry,Loading,Surveyor,6.2,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,66,Day,SYNTHETIC RECORD - demo only
+SYN-00101,2023-09-07,Underground,Walking / travelling,Mechanic,1.7,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00102,2023-12-01,Open-pit,Blasting preparation,Loader operator,4.1,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00103,2024-06-14,Open-pit,Drilling,Mechanic,7.8,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,16,Night,SYNTHETIC RECORD - demo only
+SYN-00104,2024-09-09,Open-pit,Inspection,Labourer,5.9,Unsafe interaction with machinery,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00105,2024-04-26,Open-pit,Drilling,Supervisor,7.7,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00106,2024-10-24,Open-pit,Loading,Mechanic,8.6,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,56,Day,SYNTHETIC RECORD - demo only
+SYN-00107,2024-04-23,Underground,Drilling,Haul truck driver,3.9,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00108,2023-06-30,Underground,Loading,Loader operator,2.0,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00109,2024-01-31,Underground,Material handling,Supervisor,6.3,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,16,Night,SYNTHETIC RECORD - demo only
+SYN-00110,2024-05-15,Open-pit,Maintenance,Blaster,11.2,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,20,Day,SYNTHETIC RECORD - demo only
+SYN-00111,2024-02-02,Open-pit,Blasting preparation,Mechanic,8.1,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,13,Night,SYNTHETIC RECORD - demo only
+SYN-00112,2024-06-27,Underground,Loading,Electrician,2.1,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00113,2023-07-31,Open-pit,Blasting preparation,Mechanic,13.1,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,58,Night,SYNTHETIC RECORD - demo only
+SYN-00114,2023-09-03,Underground,Loading,Surveyor,2.9,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00115,2024-12-29,Open-pit,Inspection,Loader operator,1.8,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,4,Day,SYNTHETIC RECORD - demo only
+SYN-00116,2024-04-29,Open-pit,Walking / travelling,Surveyor,5.2,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00117,2024-12-30,Open-pit,Hauling,Haul truck driver,5.7,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00118,2023-11-07,Open-pit,Drilling,Electrician,11.5,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00119,2023-11-01,Open-pit,Loading,Electrician,1.4,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,19,Night,SYNTHETIC RECORD - demo only
+SYN-00120,2023-04-23,Open-pit,Drilling,Haul truck driver,3.2,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00121,2024-08-23,Open-pit,Hauling,Loader operator,4.3,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00122,2024-07-03,Open-pit,Maintenance,Electrician,11.8,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00123,2023-03-04,Open-pit,Loading,Loader operator,3.0,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,19,Night,SYNTHETIC RECORD - demo only
+SYN-00124,2023-10-14,Quarry,Inspection,Supervisor,1.9,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,70,Day,SYNTHETIC RECORD - demo only
+SYN-00125,2024-02-18,Open-pit,Blasting preparation,Surveyor,4.1,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00126,2023-12-21,Open-pit,Drilling,Blaster,2.2,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,4,Day,SYNTHETIC RECORD - demo only
+SYN-00127,2023-02-18,Open-pit,Hauling,Loader operator,9.1,Unsafe interaction with machinery,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00128,2023-12-10,Open-pit,Material handling,Supervisor,7.8,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00129,2023-03-14,Open-pit,Hauling,Blaster,1.3,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,52,Night,SYNTHETIC RECORD - demo only
+SYN-00130,2023-09-18,Open-pit,Inspection,Mechanic,2.7,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,22,Day,SYNTHETIC RECORD - demo only
+SYN-00131,2024-09-14,Underground,Hauling,Surveyor,0.2,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00132,2023-08-25,Quarry,Hauling,Mechanic,2.3,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00133,2023-12-27,Quarry,Inspection,Blaster,1.1,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00134,2024-09-24,Open-pit,Maintenance,Blaster,7.8,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,58,Night,SYNTHETIC RECORD - demo only
+SYN-00135,2023-08-29,Open-pit,Inspection,Mechanic,0.8,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00136,2023-03-11,Open-pit,Maintenance,Electrician,8.6,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00137,2024-11-08,Open-pit,Hauling,Electrician,4.6,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00138,2024-02-15,Open-pit,Drilling,Electrician,1.8,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,69,Day,SYNTHETIC RECORD - demo only
+SYN-00139,2024-10-03,Open-pit,Material handling,Mechanic,3.6,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,54,Night,SYNTHETIC RECORD - demo only
+SYN-00140,2024-12-04,Quarry,Material handling,Loader operator,6.1,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00141,2024-03-19,Open-pit,Inspection,Blaster,4.1,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,58,Night,SYNTHETIC RECORD - demo only
+SYN-00142,2024-09-30,Open-pit,Inspection,Labourer,6.7,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00143,2023-01-30,Open-pit,Inspection,Labourer,4.9,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00144,2023-03-12,Quarry,Loading,Blaster,5.1,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00145,2024-09-28,Underground,Drilling,Blaster,7.0,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00146,2024-05-30,Open-pit,Maintenance,Supervisor,20.3,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00147,2023-02-13,Underground,Inspection,Loader operator,1.5,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00148,2023-11-21,Open-pit,Loading,Supervisor,3.6,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00149,2024-05-31,Underground,Loading,Supervisor,12.1,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00150,2024-02-03,Open-pit,Inspection,Supervisor,4.9,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00151,2023-10-13,Open-pit,Walking / travelling,Haul truck driver,4.4,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00152,2023-01-26,Open-pit,Material handling,Loader operator,2.8,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,5,Day,SYNTHETIC RECORD - demo only
+SYN-00153,2024-02-20,Quarry,Drilling,Labourer,2.0,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00154,2024-09-22,Quarry,Loading,Blaster,2.1,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,9,Day,SYNTHETIC RECORD - demo only
+SYN-00155,2024-01-30,Open-pit,Maintenance,Driller,5.1,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00156,2024-06-10,Open-pit,Walking / travelling,Supervisor,8.9,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,11,Day,SYNTHETIC RECORD - demo only
+SYN-00157,2024-12-27,Open-pit,Maintenance,Labourer,4.7,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00158,2024-12-17,Open-pit,Blasting preparation,Supervisor,2.7,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,15,Night,SYNTHETIC RECORD - demo only
+SYN-00159,2024-04-10,Quarry,Material handling,Mechanic,3.6,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,56,Night,SYNTHETIC RECORD - demo only
+SYN-00160,2024-08-15,Open-pit,Hauling,Electrician,2.4,Other / unclassified,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00161,2024-11-28,Open-pit,Drilling,Loader operator,4.4,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,5,Day,SYNTHETIC RECORD - demo only
+SYN-00162,2023-08-14,Open-pit,Walking / travelling,Labourer,6.4,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,17,Day,SYNTHETIC RECORD - demo only
+SYN-00163,2023-11-24,Underground,Drilling,Driller,1.7,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00164,2023-07-19,Open-pit,Hauling,Blaster,2.9,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00165,2024-11-09,Open-pit,Walking / travelling,Mechanic,0.9,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,7,Day,SYNTHETIC RECORD - demo only
+SYN-00166,2024-02-19,Open-pit,Walking / travelling,Surveyor,7.8,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,9,Night,SYNTHETIC RECORD - demo only
+SYN-00167,2024-10-11,Open-pit,Loading,Blaster,2.2,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00168,2024-02-11,Open-pit,Loading,Loader operator,4.1,Entry into restricted / hazardous area,FATALITY,5,0,Day,SYNTHETIC RECORD - demo only
+SYN-00169,2024-08-31,Underground,Walking / travelling,Loader operator,1.8,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00170,2023-04-13,Underground,Inspection,Surveyor,4.5,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,12,Night,SYNTHETIC RECORD - demo only
+SYN-00171,2023-07-04,Underground,Maintenance,Electrician,5.0,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00172,2023-01-29,Open-pit,Inspection,Labourer,6.1,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,68,Day,SYNTHETIC RECORD - demo only
+SYN-00173,2023-05-23,Open-pit,Blasting preparation,Labourer,0.3,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00174,2023-10-28,Open-pit,Loading,Supervisor,2.7,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00175,2023-07-31,Underground,Loading,Supervisor,2.3,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00176,2024-09-10,Open-pit,Drilling,Haul truck driver,7.4,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00177,2024-10-31,Quarry,Loading,Surveyor,8.6,Entry into restricted / hazardous area,DAYS AWAY FROM WORK ONLY,3,12,Night,SYNTHETIC RECORD - demo only
+SYN-00178,2023-04-04,Underground,Loading,Supervisor,2.4,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,65,Night,SYNTHETIC RECORD - demo only
+SYN-00179,2024-07-01,Open-pit,Blasting preparation,Loader operator,1.2,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00180,2024-06-21,Underground,Drilling,Labourer,3.3,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,11,Night,SYNTHETIC RECORD - demo only
+SYN-00181,2023-09-14,Underground,Walking / travelling,Labourer,5.5,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Night,SYNTHETIC RECORD - demo only
+SYN-00182,2024-12-16,Quarry,Material handling,Driller,1.7,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,18,Day,SYNTHETIC RECORD - demo only
+SYN-00183,2023-06-10,Underground,Drilling,Mechanic,2.7,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00184,2024-11-20,Open-pit,Drilling,Electrician,6.0,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,4,Day,SYNTHETIC RECORD - demo only
+SYN-00185,2023-01-20,Quarry,Blasting preparation,Electrician,21.0,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,5,Day,SYNTHETIC RECORD - demo only
+SYN-00186,2024-02-27,Open-pit,Drilling,Supervisor,3.1,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00187,2024-12-23,Open-pit,Hauling,Loader operator,0.8,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00188,2024-10-05,Underground,Blasting preparation,Labourer,5.3,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,65,Day,SYNTHETIC RECORD - demo only
+SYN-00189,2023-07-10,Open-pit,Material handling,Driller,4.3,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,69,Night,SYNTHETIC RECORD - demo only
+SYN-00190,2023-08-13,Open-pit,Blasting preparation,Electrician,3.1,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00191,2023-04-09,Underground,Maintenance,Electrician,19.9,Entry into restricted / hazardous area,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00192,2023-03-05,Open-pit,Drilling,Blaster,1.2,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,18,Night,SYNTHETIC RECORD - demo only
+SYN-00193,2023-12-31,Underground,Walking / travelling,Supervisor,5.3,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,60,Day,SYNTHETIC RECORD - demo only
+SYN-00194,2023-12-18,Quarry,Drilling,Labourer,8.8,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00195,2024-07-15,Underground,Walking / travelling,Haul truck driver,3.0,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00196,2024-07-08,Open-pit,Loading,Supervisor,3.9,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,15,Night,SYNTHETIC RECORD - demo only
+SYN-00197,2023-07-02,Open-pit,Walking / travelling,Mechanic,0.6,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00198,2024-09-19,Quarry,Drilling,Loader operator,7.1,Other / unclassified,DAYS RESTRICTED ACTIVITY ONLY,2,7,Day,SYNTHETIC RECORD - demo only
+SYN-00199,2024-01-05,Underground,Blasting preparation,Blaster,6.8,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00200,2024-07-08,Open-pit,Loading,Haul truck driver,1.4,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00201,2023-02-17,Open-pit,Inspection,Mechanic,3.6,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,10,Day,SYNTHETIC RECORD - demo only
+SYN-00202,2024-10-13,Open-pit,Maintenance,Loader operator,12.7,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,72,Day,SYNTHETIC RECORD - demo only
+SYN-00203,2024-03-13,Quarry,Material handling,Labourer,1.9,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00204,2023-02-03,Open-pit,Blasting preparation,Electrician,12.8,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,63,Night,SYNTHETIC RECORD - demo only
+SYN-00205,2023-12-13,Underground,Walking / travelling,Driller,7.4,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,6,Day,SYNTHETIC RECORD - demo only
+SYN-00206,2024-11-06,Open-pit,Maintenance,Supervisor,3.5,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,24,Night,SYNTHETIC RECORD - demo only
+SYN-00207,2024-02-06,Open-pit,Hauling,Surveyor,6.9,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00208,2023-04-23,Underground,Walking / travelling,Haul truck driver,3.0,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,65,Day,SYNTHETIC RECORD - demo only
+SYN-00209,2024-06-19,Open-pit,Inspection,Loader operator,1.7,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,4,Night,SYNTHETIC RECORD - demo only
+SYN-00210,2024-03-27,Quarry,Hauling,Driller,1.7,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,10,Night,SYNTHETIC RECORD - demo only
+SYN-00211,2024-07-04,Open-pit,Maintenance,Blaster,2.3,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,69,Night,SYNTHETIC RECORD - demo only
+SYN-00212,2023-03-26,Quarry,Walking / travelling,Labourer,1.6,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,1,Night,SYNTHETIC RECORD - demo only
+SYN-00213,2023-11-18,Open-pit,Maintenance,Labourer,3.6,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00214,2023-01-11,Open-pit,Drilling,Labourer,8.6,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00215,2024-01-12,Open-pit,Material handling,Blaster,2.5,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,48,Night,SYNTHETIC RECORD - demo only
+SYN-00216,2023-07-27,Underground,Maintenance,Mechanic,5.8,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,41,Day,SYNTHETIC RECORD - demo only
+SYN-00217,2024-09-07,Open-pit,Hauling,Labourer,2.8,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00218,2023-07-14,Open-pit,Hauling,Haul truck driver,5.0,Unsafe interaction with machinery,FATALITY,5,0,Day,SYNTHETIC RECORD - demo only
+SYN-00219,2023-07-08,Open-pit,Walking / travelling,Surveyor,5.1,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,14,Night,SYNTHETIC RECORD - demo only
+SYN-00220,2023-05-17,Open-pit,Loading,Haul truck driver,3.4,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,14,Night,SYNTHETIC RECORD - demo only
+SYN-00221,2023-09-17,Open-pit,Drilling,Electrician,1.2,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,15,Night,SYNTHETIC RECORD - demo only
+SYN-00222,2023-09-08,Open-pit,Maintenance,Labourer,7.2,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,49,Night,SYNTHETIC RECORD - demo only
+SYN-00223,2024-03-18,Underground,Blasting preparation,Electrician,4.6,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00224,2024-11-08,Open-pit,Drilling,Haul truck driver,5.8,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00225,2023-07-23,Open-pit,Inspection,Blaster,2.4,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00226,2024-12-24,Quarry,Hauling,Labourer,1.0,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,15,Night,SYNTHETIC RECORD - demo only
+SYN-00227,2023-11-14,Underground,Walking / travelling,Surveyor,7.9,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00228,2024-04-24,Open-pit,Walking / travelling,Electrician,6.1,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00229,2023-07-21,Open-pit,Material handling,Haul truck driver,1.9,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,59,Day,SYNTHETIC RECORD - demo only
+SYN-00230,2024-10-14,Open-pit,Material handling,Driller,5.2,Unsafe interaction with machinery,FATALITY,5,0,Day,SYNTHETIC RECORD - demo only
+SYN-00231,2023-04-21,Open-pit,Maintenance,Mechanic,5.3,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,7,Day,SYNTHETIC RECORD - demo only
+SYN-00232,2023-07-12,Quarry,Inspection,Loader operator,3.8,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00233,2023-07-08,Underground,Blasting preparation,Loader operator,3.7,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,4,Night,SYNTHETIC RECORD - demo only
+SYN-00234,2024-12-30,Open-pit,Drilling,Surveyor,3.2,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,60,Day,SYNTHETIC RECORD - demo only
+SYN-00235,2023-11-27,Open-pit,Drilling,Loader operator,1.8,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,21,Night,SYNTHETIC RECORD - demo only
+SYN-00236,2023-09-05,Underground,Blasting preparation,Haul truck driver,4.6,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00237,2023-08-22,Open-pit,Material handling,Labourer,5.1,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00238,2023-07-11,Underground,Drilling,Blaster,3.4,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,13,Night,SYNTHETIC RECORD - demo only
+SYN-00239,2024-01-17,Quarry,Inspection,Surveyor,7.7,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,7,Night,SYNTHETIC RECORD - demo only
+SYN-00240,2024-02-15,Open-pit,Walking / travelling,Electrician,11.9,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00241,2024-03-23,Underground,Maintenance,Surveyor,1.2,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,20,Day,SYNTHETIC RECORD - demo only
+SYN-00242,2023-11-03,Open-pit,Inspection,Blaster,11.5,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,17,Day,SYNTHETIC RECORD - demo only
+SYN-00243,2023-08-02,Quarry,Loading,Electrician,4.7,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00244,2024-11-23,Underground,Loading,Labourer,2.9,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,60,Day,SYNTHETIC RECORD - demo only
+SYN-00245,2024-10-17,Quarry,Material handling,Haul truck driver,6.0,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,57,Day,SYNTHETIC RECORD - demo only
+SYN-00246,2023-12-29,Quarry,Material handling,Haul truck driver,4.6,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,45,Day,SYNTHETIC RECORD - demo only
+SYN-00247,2023-05-25,Open-pit,Blasting preparation,Labourer,0.0,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00248,2023-11-09,Underground,Loading,Surveyor,10.6,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,57,Day,SYNTHETIC RECORD - demo only
+SYN-00249,2023-07-30,Underground,Hauling,Haul truck driver,6.5,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,47,Day,SYNTHETIC RECORD - demo only
+SYN-00250,2023-12-23,Open-pit,Inspection,Supervisor,6.6,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,7,Night,SYNTHETIC RECORD - demo only
+SYN-00251,2023-11-02,Open-pit,Drilling,Labourer,6.6,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00252,2024-09-28,Underground,Maintenance,Loader operator,0.2,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,64,Day,SYNTHETIC RECORD - demo only
+SYN-00253,2024-07-10,Quarry,Drilling,Haul truck driver,2.9,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,2,Night,SYNTHETIC RECORD - demo only
+SYN-00254,2024-12-24,Open-pit,Blasting preparation,Loader operator,4.3,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,2,Night,SYNTHETIC RECORD - demo only
+SYN-00255,2023-06-30,Open-pit,Walking / travelling,Driller,5.8,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,5,Day,SYNTHETIC RECORD - demo only
+SYN-00256,2023-02-19,Quarry,Material handling,Loader operator,6.4,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00257,2024-06-13,Open-pit,Hauling,Electrician,14.1,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,16,Night,SYNTHETIC RECORD - demo only
+SYN-00258,2024-05-24,Quarry,Hauling,Mechanic,1.1,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,17,Night,SYNTHETIC RECORD - demo only
+SYN-00259,2024-01-29,Open-pit,Material handling,Mechanic,8.3,Other / unclassified,DAYS RESTRICTED ACTIVITY ONLY,2,0,Day,SYNTHETIC RECORD - demo only
+SYN-00260,2024-06-09,Underground,Drilling,Surveyor,7.6,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,63,Day,SYNTHETIC RECORD - demo only
+SYN-00261,2024-09-29,Underground,Drilling,Haul truck driver,3.7,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,62,Night,SYNTHETIC RECORD - demo only
+SYN-00262,2023-09-05,Open-pit,Material handling,Surveyor,12.3,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00263,2023-03-19,Open-pit,Hauling,Surveyor,3.0,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,57,Night,SYNTHETIC RECORD - demo only
+SYN-00264,2024-11-05,Quarry,Walking / travelling,Labourer,3.7,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,61,Night,SYNTHETIC RECORD - demo only
+SYN-00265,2024-11-24,Underground,Walking / travelling,Driller,3.7,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,75,Night,SYNTHETIC RECORD - demo only
+SYN-00266,2023-03-12,Open-pit,Drilling,Surveyor,3.0,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,10,Day,SYNTHETIC RECORD - demo only
+SYN-00267,2023-09-26,Underground,Drilling,Supervisor,2.1,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,51,Night,SYNTHETIC RECORD - demo only
+SYN-00268,2024-04-11,Underground,Maintenance,Haul truck driver,5.1,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,24,Night,SYNTHETIC RECORD - demo only
+SYN-00269,2024-01-06,Open-pit,Maintenance,Blaster,4.6,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00270,2023-08-03,Open-pit,Loading,Labourer,2.7,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00271,2024-03-26,Underground,Hauling,Electrician,6.0,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,60,Day,SYNTHETIC RECORD - demo only
+SYN-00272,2024-12-27,Open-pit,Walking / travelling,Mechanic,9.0,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00273,2024-05-23,Quarry,Inspection,Loader operator,7.5,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,1,Night,SYNTHETIC RECORD - demo only
+SYN-00274,2023-11-22,Open-pit,Loading,Loader operator,4.9,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,14,Night,SYNTHETIC RECORD - demo only
+SYN-00275,2023-08-04,Quarry,Blasting preparation,Haul truck driver,4.4,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,14,Night,SYNTHETIC RECORD - demo only
+SYN-00276,2024-07-04,Open-pit,Hauling,Loader operator,3.9,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,63,Night,SYNTHETIC RECORD - demo only
+SYN-00277,2023-12-26,Underground,Hauling,Driller,4.6,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,15,Night,SYNTHETIC RECORD - demo only
+SYN-00278,2024-12-01,Open-pit,Maintenance,Supervisor,6.5,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,16,Day,SYNTHETIC RECORD - demo only
+SYN-00279,2023-03-02,Open-pit,Material handling,Surveyor,7.0,Unsafe interaction with machinery,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00280,2023-06-02,Underground,Blasting preparation,Loader operator,2.5,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,65,Day,SYNTHETIC RECORD - demo only
+SYN-00281,2024-06-16,Underground,Hauling,Mechanic,9.9,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,7,Day,SYNTHETIC RECORD - demo only
+SYN-00282,2023-10-17,Open-pit,Maintenance,Driller,1.9,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,15,Night,SYNTHETIC RECORD - demo only
+SYN-00283,2024-03-24,Open-pit,Drilling,Blaster,0.8,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,5,Day,SYNTHETIC RECORD - demo only
+SYN-00284,2024-03-01,Open-pit,Material handling,Electrician,13.6,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00285,2024-11-23,Open-pit,Hauling,Surveyor,4.8,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00286,2023-01-24,Open-pit,Inspection,Surveyor,8.2,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,5,Night,SYNTHETIC RECORD - demo only
+SYN-00287,2024-12-10,Open-pit,Drilling,Driller,2.0,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,53,Night,SYNTHETIC RECORD - demo only
+SYN-00288,2024-08-12,Open-pit,Walking / travelling,Blaster,1.3,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,51,Night,SYNTHETIC RECORD - demo only
+SYN-00289,2023-01-02,Open-pit,Loading,Labourer,2.2,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,56,Day,SYNTHETIC RECORD - demo only
+SYN-00290,2024-02-24,Open-pit,Drilling,Surveyor,3.9,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00291,2023-05-31,Open-pit,Material handling,Labourer,9.9,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00292,2023-02-28,Quarry,Blasting preparation,Surveyor,0.4,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00293,2024-04-21,Quarry,Maintenance,Haul truck driver,7.2,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,1,Night,SYNTHETIC RECORD - demo only
+SYN-00294,2024-12-24,Open-pit,Drilling,Surveyor,4.3,Unsafe interaction with machinery,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00295,2024-04-18,Open-pit,Hauling,Driller,2.8,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,10,Day,SYNTHETIC RECORD - demo only
+SYN-00296,2024-05-20,Underground,Walking / travelling,Labourer,11.8,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,75,Night,SYNTHETIC RECORD - demo only
+SYN-00297,2024-04-02,Open-pit,Maintenance,Electrician,9.1,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00298,2024-06-17,Open-pit,Inspection,Loader operator,0.5,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,17,Day,SYNTHETIC RECORD - demo only
+SYN-00299,2023-11-14,Quarry,Material handling,Driller,5.5,Entry into restricted / hazardous area,DAYS AWAY FROM WORK ONLY,3,17,Night,SYNTHETIC RECORD - demo only
+SYN-00300,2023-06-10,Underground,Maintenance,Electrician,3.2,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00301,2024-05-14,Underground,Inspection,Mechanic,8.6,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,54,Day,SYNTHETIC RECORD - demo only
+SYN-00302,2023-06-29,Open-pit,Drilling,Mechanic,7.0,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,12,Night,SYNTHETIC RECORD - demo only
+SYN-00303,2024-08-17,Open-pit,Maintenance,Electrician,4.8,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,23,Day,SYNTHETIC RECORD - demo only
+SYN-00304,2024-01-19,Open-pit,Maintenance,Haul truck driver,3.1,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00305,2024-03-29,Open-pit,Hauling,Haul truck driver,2.4,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,54,Day,SYNTHETIC RECORD - demo only
+SYN-00306,2023-01-01,Open-pit,Loading,Haul truck driver,2.1,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,16,Day,SYNTHETIC RECORD - demo only
+SYN-00307,2023-03-21,Open-pit,Loading,Loader operator,3.7,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,4,Night,SYNTHETIC RECORD - demo only
+SYN-00308,2023-10-08,Quarry,Drilling,Loader operator,1.2,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00309,2023-02-12,Quarry,Blasting preparation,Mechanic,4.4,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,17,Day,SYNTHETIC RECORD - demo only
+SYN-00310,2023-06-28,Quarry,Inspection,Haul truck driver,9.8,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,17,Day,SYNTHETIC RECORD - demo only
+SYN-00311,2024-05-24,Open-pit,Maintenance,Loader operator,2.5,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,5,Day,SYNTHETIC RECORD - demo only
+SYN-00312,2024-08-17,Open-pit,Walking / travelling,Driller,0.2,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00313,2024-09-30,Open-pit,Hauling,Electrician,8.5,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,51,Day,SYNTHETIC RECORD - demo only
+SYN-00314,2023-07-01,Quarry,Loading,Surveyor,6.8,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,26,Day,SYNTHETIC RECORD - demo only
+SYN-00315,2023-07-26,Open-pit,Inspection,Loader operator,1.4,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,59,Day,SYNTHETIC RECORD - demo only
+SYN-00316,2024-04-22,Underground,Loading,Electrician,5.1,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00317,2024-03-18,Open-pit,Walking / travelling,Driller,6.5,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,44,Day,SYNTHETIC RECORD - demo only
+SYN-00318,2023-08-14,Open-pit,Material handling,Mechanic,2.9,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,4,Night,SYNTHETIC RECORD - demo only
+SYN-00319,2024-03-06,Open-pit,Drilling,Haul truck driver,12.8,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,66,Night,SYNTHETIC RECORD - demo only
+SYN-00320,2024-06-01,Quarry,Loading,Haul truck driver,14.1,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00321,2023-08-18,Open-pit,Blasting preparation,Driller,0.5,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00322,2023-02-17,Open-pit,Blasting preparation,Driller,4.9,Entry into restricted / hazardous area,DAYS AWAY FROM WORK ONLY,3,16,Day,SYNTHETIC RECORD - demo only
+SYN-00323,2024-07-12,Open-pit,Blasting preparation,Electrician,4.9,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,63,Day,SYNTHETIC RECORD - demo only
+SYN-00324,2024-07-25,Underground,Material handling,Labourer,13.7,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00325,2024-03-12,Open-pit,Loading,Driller,8.4,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,4,Night,SYNTHETIC RECORD - demo only
+SYN-00326,2024-08-18,Underground,Hauling,Surveyor,3.8,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,4,Day,SYNTHETIC RECORD - demo only
+SYN-00327,2024-07-09,Open-pit,Inspection,Loader operator,2.3,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,59,Night,SYNTHETIC RECORD - demo only
+SYN-00328,2024-12-05,Open-pit,Inspection,Haul truck driver,3.2,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00329,2024-12-01,Underground,Drilling,Mechanic,5.1,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00330,2024-11-15,Open-pit,Walking / travelling,Driller,6.5,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,4,Night,SYNTHETIC RECORD - demo only
+SYN-00331,2023-08-31,Open-pit,Material handling,Labourer,2.2,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,52,Day,SYNTHETIC RECORD - demo only
+SYN-00332,2023-11-08,Quarry,Maintenance,Haul truck driver,2.1,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00333,2023-02-11,Underground,Hauling,Blaster,5.8,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00334,2024-09-18,Open-pit,Drilling,Haul truck driver,1.0,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00335,2024-10-30,Open-pit,Material handling,Supervisor,5.9,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,81,Night,SYNTHETIC RECORD - demo only
+SYN-00336,2023-05-18,Open-pit,Material handling,Mechanic,2.8,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,5,Night,SYNTHETIC RECORD - demo only
+SYN-00337,2024-11-15,Open-pit,Material handling,Labourer,4.7,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,52,Day,SYNTHETIC RECORD - demo only
+SYN-00338,2023-07-30,Open-pit,Maintenance,Haul truck driver,8.7,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,5,Day,SYNTHETIC RECORD - demo only
+SYN-00339,2024-10-31,Underground,Maintenance,Supervisor,4.8,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00340,2024-05-26,Underground,Inspection,Mechanic,1.1,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00341,2023-07-24,Open-pit,Material handling,Driller,2.5,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,17,Night,SYNTHETIC RECORD - demo only
+SYN-00342,2023-12-19,Open-pit,Loading,Loader operator,6.8,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00343,2023-08-24,Quarry,Inspection,Mechanic,7.5,Other / unclassified,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00344,2023-12-11,Quarry,Maintenance,Labourer,9.8,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00345,2024-02-17,Open-pit,Hauling,Haul truck driver,1.2,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00346,2024-11-25,Open-pit,Inspection,Supervisor,1.5,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,6,Day,SYNTHETIC RECORD - demo only
+SYN-00347,2023-07-21,Open-pit,Loading,Loader operator,2.3,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00348,2023-11-13,Open-pit,Maintenance,Electrician,8.3,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,6,Day,SYNTHETIC RECORD - demo only
+SYN-00349,2024-12-30,Underground,Drilling,Haul truck driver,2.2,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,7,Day,SYNTHETIC RECORD - demo only
+SYN-00350,2024-02-03,Underground,Blasting preparation,Driller,5.5,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,9,Day,SYNTHETIC RECORD - demo only
+SYN-00351,2024-08-07,Underground,Loading,Surveyor,4.3,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00352,2024-11-20,Open-pit,Walking / travelling,Haul truck driver,4.8,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00353,2024-10-06,Open-pit,Inspection,Labourer,2.3,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00354,2024-08-03,Open-pit,Inspection,Electrician,2.9,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,57,Day,SYNTHETIC RECORD - demo only
+SYN-00355,2023-09-18,Open-pit,Inspection,Labourer,5.8,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,4,Day,SYNTHETIC RECORD - demo only
+SYN-00356,2024-04-17,Open-pit,Drilling,Blaster,3.6,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,21,Night,SYNTHETIC RECORD - demo only
+SYN-00357,2023-01-08,Quarry,Maintenance,Labourer,2.9,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,24,Night,SYNTHETIC RECORD - demo only
+SYN-00358,2024-05-15,Open-pit,Inspection,Supervisor,7.1,Other / unclassified,DAYS RESTRICTED ACTIVITY ONLY,2,2,Night,SYNTHETIC RECORD - demo only
+SYN-00359,2024-11-07,Open-pit,Walking / travelling,Haul truck driver,4.4,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,17,Day,SYNTHETIC RECORD - demo only
+SYN-00360,2024-10-02,Underground,Blasting preparation,Labourer,6.2,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00361,2023-04-08,Open-pit,Maintenance,Haul truck driver,0.7,Unsafe interaction with machinery,FATALITY,5,0,Day,SYNTHETIC RECORD - demo only
+SYN-00362,2023-02-11,Quarry,Drilling,Surveyor,0.6,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00363,2024-10-03,Quarry,Blasting preparation,Surveyor,4.4,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,61,Night,SYNTHETIC RECORD - demo only
+SYN-00364,2023-08-29,Open-pit,Blasting preparation,Haul truck driver,7.0,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,62,Day,SYNTHETIC RECORD - demo only
+SYN-00365,2023-09-03,Underground,Walking / travelling,Electrician,0.9,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00366,2023-01-01,Open-pit,Loading,Supervisor,1.2,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,21,Night,SYNTHETIC RECORD - demo only
+SYN-00367,2023-07-30,Underground,Hauling,Surveyor,2.8,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,16,Day,SYNTHETIC RECORD - demo only
+SYN-00368,2024-02-08,Open-pit,Blasting preparation,Labourer,2.5,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,14,Night,SYNTHETIC RECORD - demo only
+SYN-00369,2024-05-29,Underground,Inspection,Mechanic,8.9,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00370,2023-06-02,Open-pit,Drilling,Mechanic,3.7,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,16,Night,SYNTHETIC RECORD - demo only
+SYN-00371,2024-09-15,Open-pit,Inspection,Mechanic,5.3,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,0,Night,SYNTHETIC RECORD - demo only
+SYN-00372,2024-08-14,Underground,Blasting preparation,Driller,2.1,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,7,Day,SYNTHETIC RECORD - demo only
+SYN-00373,2023-03-22,Open-pit,Material handling,Labourer,4.0,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00374,2023-01-13,Open-pit,Hauling,Loader operator,9.8,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,17,Day,SYNTHETIC RECORD - demo only
+SYN-00375,2024-10-10,Open-pit,Maintenance,Surveyor,6.0,Entry into restricted / hazardous area,DAYS AWAY FROM WORK ONLY,3,11,Day,SYNTHETIC RECORD - demo only
+SYN-00376,2024-09-13,Quarry,Walking / travelling,Labourer,18.0,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00377,2024-03-30,Open-pit,Maintenance,Electrician,1.5,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,6,Night,SYNTHETIC RECORD - demo only
+SYN-00378,2023-08-13,Open-pit,Drilling,Driller,5.4,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00379,2024-08-01,Open-pit,Maintenance,Electrician,10.5,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,21,Day,SYNTHETIC RECORD - demo only
+SYN-00380,2024-08-09,Open-pit,Loading,Surveyor,4.3,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,9,Night,SYNTHETIC RECORD - demo only
+SYN-00381,2023-11-16,Open-pit,Drilling,Loader operator,4.5,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00382,2024-04-23,Open-pit,Maintenance,Mechanic,1.3,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,4,Day,SYNTHETIC RECORD - demo only
+SYN-00383,2023-11-26,Underground,Blasting preparation,Electrician,9.6,Other / unclassified,DAYS RESTRICTED ACTIVITY ONLY,2,4,Day,SYNTHETIC RECORD - demo only
+SYN-00384,2024-03-05,Open-pit,Maintenance,Surveyor,2.6,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00385,2023-01-23,Underground,Walking / travelling,Loader operator,4.1,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00386,2023-08-14,Open-pit,Material handling,Driller,8.3,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,8,Day,SYNTHETIC RECORD - demo only
+SYN-00387,2024-10-25,Quarry,Loading,Electrician,3.0,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00388,2023-09-20,Underground,Walking / travelling,Driller,2.9,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,56,Night,SYNTHETIC RECORD - demo only
+SYN-00389,2023-02-08,Underground,Hauling,Loader operator,15.7,Unsafe interaction with machinery,FATALITY,5,0,Day,SYNTHETIC RECORD - demo only
+SYN-00390,2023-09-12,Quarry,Maintenance,Mechanic,12.6,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00391,2023-11-06,Open-pit,Maintenance,Haul truck driver,5.2,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,71,Day,SYNTHETIC RECORD - demo only
+SYN-00392,2023-08-30,Underground,Material handling,Blaster,2.7,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,19,Night,SYNTHETIC RECORD - demo only
+SYN-00393,2024-01-11,Quarry,Loading,Blaster,2.9,Other / unclassified,DAYS RESTRICTED ACTIVITY ONLY,2,8,Day,SYNTHETIC RECORD - demo only
+SYN-00394,2024-06-13,Underground,Material handling,Blaster,7.4,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,11,Night,SYNTHETIC RECORD - demo only
+SYN-00395,2023-07-02,Quarry,Material handling,Driller,16.7,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,11,Day,SYNTHETIC RECORD - demo only
+SYN-00396,2023-09-08,Open-pit,Drilling,Driller,5.0,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,22,Night,SYNTHETIC RECORD - demo only
+SYN-00397,2023-02-12,Underground,Material handling,Labourer,17.2,Unsafe interaction with machinery,FATALITY,5,0,Day,SYNTHETIC RECORD - demo only
+SYN-00398,2024-12-02,Underground,Walking / travelling,Surveyor,5.5,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00399,2024-11-12,Open-pit,Drilling,Labourer,1.4,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00400,2024-05-24,Open-pit,Walking / travelling,Driller,4.8,Other / unclassified,DAYS RESTRICTED ACTIVITY ONLY,2,0,Day,SYNTHETIC RECORD - demo only
+SYN-00401,2024-07-22,Open-pit,Hauling,Driller,4.5,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,56,Day,SYNTHETIC RECORD - demo only
+SYN-00402,2024-11-14,Underground,Inspection,Mechanic,3.7,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,10,Day,SYNTHETIC RECORD - demo only
+SYN-00403,2023-07-24,Underground,Material handling,Surveyor,6.2,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00404,2024-11-13,Underground,Maintenance,Labourer,3.4,Entry into restricted / hazardous area,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00405,2023-11-18,Underground,Inspection,Haul truck driver,0.9,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,5,Night,SYNTHETIC RECORD - demo only
+SYN-00406,2023-06-22,Open-pit,Maintenance,Blaster,1.5,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00407,2023-11-16,Underground,Blasting preparation,Haul truck driver,9.5,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,1,Night,SYNTHETIC RECORD - demo only
+SYN-00408,2024-02-16,Open-pit,Loading,Mechanic,2.2,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00409,2024-11-26,Open-pit,Material handling,Blaster,2.3,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00410,2024-12-12,Open-pit,Maintenance,Supervisor,8.4,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00411,2024-03-28,Open-pit,Hauling,Blaster,6.3,Unsafe interaction with machinery,FATALITY,5,0,Day,SYNTHETIC RECORD - demo only
+SYN-00412,2024-05-29,Open-pit,Hauling,Blaster,3.7,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,17,Night,SYNTHETIC RECORD - demo only
+SYN-00413,2023-12-13,Quarry,Drilling,Blaster,13.8,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00414,2023-09-10,Quarry,Hauling,Loader operator,1.8,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00415,2023-01-27,Open-pit,Hauling,Driller,1.3,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,56,Day,SYNTHETIC RECORD - demo only
+SYN-00416,2023-05-20,Underground,Material handling,Loader operator,1.5,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,71,Day,SYNTHETIC RECORD - demo only
+SYN-00417,2024-12-01,Quarry,Material handling,Electrician,3.6,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,1,Night,SYNTHETIC RECORD - demo only
+SYN-00418,2023-08-19,Open-pit,Loading,Electrician,14.6,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00419,2023-04-26,Open-pit,Hauling,Loader operator,1.5,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,78,Day,SYNTHETIC RECORD - demo only
+SYN-00420,2023-02-09,Open-pit,Walking / travelling,Labourer,3.8,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,63,Day,SYNTHETIC RECORD - demo only
+SYN-00421,2023-02-22,Open-pit,Loading,Labourer,1.3,Entry into restricted / hazardous area,DAYS AWAY FROM WORK ONLY,3,8,Day,SYNTHETIC RECORD - demo only
+SYN-00422,2023-09-05,Open-pit,Walking / travelling,Electrician,0.6,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00423,2023-04-22,Open-pit,Loading,Mechanic,1.4,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,54,Night,SYNTHETIC RECORD - demo only
+SYN-00424,2023-07-02,Open-pit,Inspection,Haul truck driver,1.1,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,18,Day,SYNTHETIC RECORD - demo only
+SYN-00425,2024-11-22,Underground,Walking / travelling,Mechanic,8.5,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00426,2023-04-01,Open-pit,Walking / travelling,Driller,5.5,Unsafe interaction with machinery,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00427,2024-07-04,Open-pit,Walking / travelling,Supervisor,12.0,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00428,2024-11-24,Underground,Loading,Labourer,5.9,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,14,Night,SYNTHETIC RECORD - demo only
+SYN-00429,2024-08-07,Quarry,Walking / travelling,Electrician,2.1,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,10,Day,SYNTHETIC RECORD - demo only
+SYN-00430,2024-10-26,Open-pit,Material handling,Blaster,6.0,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,17,Day,SYNTHETIC RECORD - demo only
+SYN-00431,2024-02-24,Open-pit,Inspection,Labourer,2.4,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,13,Night,SYNTHETIC RECORD - demo only
+SYN-00432,2024-01-29,Underground,Loading,Haul truck driver,6.2,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,11,Night,SYNTHETIC RECORD - demo only
+SYN-00433,2023-08-24,Open-pit,Loading,Mechanic,1.5,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,5,Night,SYNTHETIC RECORD - demo only
+SYN-00434,2024-10-30,Open-pit,Drilling,Driller,4.9,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,19,Day,SYNTHETIC RECORD - demo only
+SYN-00435,2024-09-23,Open-pit,Maintenance,Labourer,6.5,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,5,Day,SYNTHETIC RECORD - demo only
+SYN-00436,2024-06-17,Underground,Hauling,Blaster,2.7,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,60,Day,SYNTHETIC RECORD - demo only
+SYN-00437,2024-08-03,Open-pit,Hauling,Labourer,1.2,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,0,Day,SYNTHETIC RECORD - demo only
+SYN-00438,2024-05-18,Open-pit,Hauling,Blaster,4.6,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00439,2023-11-26,Open-pit,Walking / travelling,Labourer,3.6,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00440,2023-10-23,Open-pit,Walking / travelling,Labourer,0.4,Entry into restricted / hazardous area,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00441,2024-07-30,Open-pit,Drilling,Mechanic,0.2,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,10,Day,SYNTHETIC RECORD - demo only
+SYN-00442,2023-04-08,Open-pit,Inspection,Labourer,8.5,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,16,Day,SYNTHETIC RECORD - demo only
+SYN-00443,2023-05-08,Open-pit,Walking / travelling,Loader operator,7.5,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,68,Day,SYNTHETIC RECORD - demo only
+SYN-00444,2023-02-14,Open-pit,Walking / travelling,Loader operator,5.1,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,17,Day,SYNTHETIC RECORD - demo only
+SYN-00445,2024-05-10,Open-pit,Loading,Supervisor,1.6,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00446,2023-04-22,Open-pit,Maintenance,Surveyor,2.8,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,16,Day,SYNTHETIC RECORD - demo only
+SYN-00447,2024-06-18,Underground,Walking / travelling,Haul truck driver,1.2,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,11,Night,SYNTHETIC RECORD - demo only
+SYN-00448,2024-08-27,Open-pit,Blasting preparation,Labourer,6.2,Entry into restricted / hazardous area,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00449,2023-05-23,Underground,Drilling,Blaster,0.5,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,51,Day,SYNTHETIC RECORD - demo only
+SYN-00450,2023-12-06,Quarry,Inspection,Driller,10.3,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,6,Night,SYNTHETIC RECORD - demo only
+SYN-00451,2023-12-16,Underground,Walking / travelling,Surveyor,5.3,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00452,2023-01-06,Open-pit,Loading,Mechanic,2.5,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,16,Day,SYNTHETIC RECORD - demo only
+SYN-00453,2023-10-22,Open-pit,Loading,Mechanic,7.1,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00454,2023-01-09,Open-pit,Blasting preparation,Labourer,18.5,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,16,Night,SYNTHETIC RECORD - demo only
+SYN-00455,2024-11-13,Underground,Hauling,Surveyor,2.7,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00456,2024-02-07,Open-pit,Hauling,Electrician,1.7,Entry into restricted / hazardous area,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00457,2023-02-19,Open-pit,Hauling,Surveyor,11.0,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00458,2024-08-15,Open-pit,Hauling,Loader operator,3.6,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,16,Night,SYNTHETIC RECORD - demo only
+SYN-00459,2024-01-15,Underground,Maintenance,Loader operator,5.9,Other / unclassified,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00460,2024-06-25,Open-pit,Material handling,Labourer,9.8,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,18,Day,SYNTHETIC RECORD - demo only
+SYN-00461,2023-07-27,Open-pit,Blasting preparation,Labourer,3.4,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,2,Night,SYNTHETIC RECORD - demo only
+SYN-00462,2024-01-17,Open-pit,Drilling,Driller,2.2,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,59,Night,SYNTHETIC RECORD - demo only
+SYN-00463,2024-02-29,Open-pit,Hauling,Electrician,3.6,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,4,Night,SYNTHETIC RECORD - demo only
+SYN-00464,2024-06-29,Open-pit,Maintenance,Driller,2.4,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,15,Night,SYNTHETIC RECORD - demo only
+SYN-00465,2023-09-29,Open-pit,Walking / travelling,Electrician,5.0,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,10,Night,SYNTHETIC RECORD - demo only
+SYN-00466,2024-01-08,Open-pit,Walking / travelling,Loader operator,6.0,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,63,Day,SYNTHETIC RECORD - demo only
+SYN-00467,2023-06-22,Open-pit,Inspection,Driller,1.2,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,6,Day,SYNTHETIC RECORD - demo only
+SYN-00468,2024-10-02,Quarry,Maintenance,Haul truck driver,5.6,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00469,2024-04-27,Open-pit,Loading,Blaster,0.4,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,10,Day,SYNTHETIC RECORD - demo only
+SYN-00470,2023-08-27,Quarry,Walking / travelling,Loader operator,9.0,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,1,Night,SYNTHETIC RECORD - demo only
+SYN-00471,2023-07-23,Underground,Hauling,Haul truck driver,9.8,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00472,2023-12-02,Underground,Material handling,Surveyor,5.5,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00473,2024-01-25,Open-pit,Material handling,Surveyor,2.8,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00474,2023-01-14,Open-pit,Material handling,Mechanic,1.7,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00475,2023-08-23,Open-pit,Material handling,Labourer,13.7,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00476,2023-06-29,Open-pit,Maintenance,Blaster,2.6,Unsafe interaction with machinery,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00477,2024-06-12,Underground,Material handling,Driller,10.9,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00478,2023-12-18,Open-pit,Hauling,Haul truck driver,1.3,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,10,Day,SYNTHETIC RECORD - demo only
+SYN-00479,2023-09-17,Open-pit,Walking / travelling,Supervisor,5.3,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00480,2024-05-13,Open-pit,Blasting preparation,Electrician,5.4,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,4,Night,SYNTHETIC RECORD - demo only
+SYN-00481,2024-08-16,Open-pit,Maintenance,Mechanic,3.0,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,18,Day,SYNTHETIC RECORD - demo only
+SYN-00482,2023-04-29,Open-pit,Blasting preparation,Surveyor,7.4,Entry into restricted / hazardous area,FATALITY,5,0,Day,SYNTHETIC RECORD - demo only
+SYN-00483,2023-02-24,Underground,Walking / travelling,Surveyor,15.6,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,8,Day,SYNTHETIC RECORD - demo only
+SYN-00484,2024-12-14,Open-pit,Loading,Loader operator,6.8,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00485,2024-12-21,Underground,Drilling,Electrician,1.3,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,56,Day,SYNTHETIC RECORD - demo only
+SYN-00486,2023-08-10,Underground,Walking / travelling,Labourer,1.6,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00487,2023-06-07,Quarry,Material handling,Mechanic,2.6,Entry into restricted / hazardous area,DAYS AWAY FROM WORK ONLY,3,21,Night,SYNTHETIC RECORD - demo only
+SYN-00488,2023-07-13,Open-pit,Loading,Labourer,1.9,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00489,2023-09-06,Underground,Loading,Loader operator,3.5,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,53,Day,SYNTHETIC RECORD - demo only
+SYN-00490,2024-12-27,Quarry,Loading,Loader operator,2.2,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,13,Night,SYNTHETIC RECORD - demo only
+SYN-00491,2023-11-01,Quarry,Blasting preparation,Surveyor,5.1,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,9,Day,SYNTHETIC RECORD - demo only
+SYN-00492,2023-03-02,Open-pit,Hauling,Blaster,6.5,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00493,2023-01-26,Open-pit,Hauling,Mechanic,7.9,Unsafe interaction with machinery,FATALITY,5,0,Day,SYNTHETIC RECORD - demo only
+SYN-00494,2024-09-30,Quarry,Inspection,Haul truck driver,3.4,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,18,Night,SYNTHETIC RECORD - demo only
+SYN-00495,2024-09-17,Underground,Hauling,Labourer,6.3,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,12,Night,SYNTHETIC RECORD - demo only
+SYN-00496,2023-12-16,Open-pit,Inspection,Electrician,8.8,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,4,Day,SYNTHETIC RECORD - demo only
+SYN-00497,2023-09-10,Underground,Blasting preparation,Driller,3.6,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00498,2023-09-09,Open-pit,Hauling,Labourer,6.4,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,10,Day,SYNTHETIC RECORD - demo only
+SYN-00499,2023-09-03,Underground,Drilling,Driller,1.2,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,16,Day,SYNTHETIC RECORD - demo only
+SYN-00500,2024-10-25,Underground,Material handling,Electrician,14.6,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,6,Night,SYNTHETIC RECORD - demo only
+SYN-00501,2023-07-28,Open-pit,Loading,Haul truck driver,9.6,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00502,2024-11-05,Open-pit,Blasting preparation,Blaster,1.6,Entry into restricted / hazardous area,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00503,2024-01-03,Quarry,Material handling,Labourer,5.5,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,59,Night,SYNTHETIC RECORD - demo only
+SYN-00504,2024-04-15,Open-pit,Walking / travelling,Haul truck driver,9.9,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00505,2024-04-23,Open-pit,Walking / travelling,Supervisor,1.0,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,73,Night,SYNTHETIC RECORD - demo only
+SYN-00506,2023-04-10,Underground,Blasting preparation,Labourer,2.5,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,0,Day,SYNTHETIC RECORD - demo only
+SYN-00507,2023-05-17,Open-pit,Walking / travelling,Surveyor,6.6,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,18,Day,SYNTHETIC RECORD - demo only
+SYN-00508,2024-06-16,Open-pit,Walking / travelling,Mechanic,1.6,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,58,Day,SYNTHETIC RECORD - demo only
+SYN-00509,2023-11-09,Open-pit,Loading,Driller,4.5,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00510,2024-05-28,Open-pit,Drilling,Blaster,6.1,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,4,Day,SYNTHETIC RECORD - demo only
+SYN-00511,2024-08-26,Open-pit,Blasting preparation,Haul truck driver,14.4,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,10,Night,SYNTHETIC RECORD - demo only
+SYN-00512,2023-10-16,Open-pit,Maintenance,Loader operator,6.0,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,17,Night,SYNTHETIC RECORD - demo only
+SYN-00513,2024-11-24,Open-pit,Walking / travelling,Mechanic,3.0,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00514,2023-07-18,Underground,Material handling,Mechanic,2.8,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00515,2023-06-28,Underground,Loading,Mechanic,6.0,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00516,2023-04-20,Open-pit,Material handling,Mechanic,5.7,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00517,2023-11-19,Open-pit,Walking / travelling,Electrician,0.2,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00518,2023-07-30,Open-pit,Inspection,Surveyor,3.8,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,17,Night,SYNTHETIC RECORD - demo only
+SYN-00519,2023-03-30,Open-pit,Hauling,Blaster,4.6,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,23,Night,SYNTHETIC RECORD - demo only
+SYN-00520,2023-10-25,Open-pit,Walking / travelling,Loader operator,7.0,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00521,2023-06-07,Open-pit,Drilling,Electrician,9.8,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,12,Night,SYNTHETIC RECORD - demo only
+SYN-00522,2023-04-23,Open-pit,Inspection,Electrician,4.9,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,16,Night,SYNTHETIC RECORD - demo only
+SYN-00523,2024-01-23,Underground,Hauling,Mechanic,1.7,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,67,Night,SYNTHETIC RECORD - demo only
+SYN-00524,2024-12-16,Open-pit,Inspection,Driller,0.9,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,70,Day,SYNTHETIC RECORD - demo only
+SYN-00525,2023-12-22,Open-pit,Loading,Driller,6.7,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00526,2024-03-29,Underground,Material handling,Haul truck driver,9.4,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,56,Day,SYNTHETIC RECORD - demo only
+SYN-00527,2024-08-15,Quarry,Hauling,Supervisor,11.3,Unsafe interaction with machinery,PERM TOT OR PERM PRTL DISABLTY,4,53,Day,SYNTHETIC RECORD - demo only
+SYN-00528,2023-05-19,Quarry,Drilling,Haul truck driver,2.3,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,17,Day,SYNTHETIC RECORD - demo only
+SYN-00529,2023-09-15,Underground,Drilling,Loader operator,2.1,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,64,Day,SYNTHETIC RECORD - demo only
+SYN-00530,2024-04-20,Underground,Material handling,Blaster,4.1,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,12,Day,SYNTHETIC RECORD - demo only
+SYN-00531,2024-01-05,Open-pit,Blasting preparation,Mechanic,2.4,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,14,Night,SYNTHETIC RECORD - demo only
+SYN-00532,2024-03-20,Open-pit,Blasting preparation,Driller,5.1,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00533,2024-03-24,Open-pit,Drilling,Supervisor,7.2,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00534,2024-12-30,Open-pit,Material handling,Surveyor,5.8,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00535,2023-07-20,Open-pit,Walking / travelling,Labourer,15.2,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,62,Day,SYNTHETIC RECORD - demo only
+SYN-00536,2024-11-04,Open-pit,Inspection,Mechanic,1.9,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00537,2024-12-19,Open-pit,Blasting preparation,Labourer,2.4,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,10,Night,SYNTHETIC RECORD - demo only
+SYN-00538,2023-02-07,Quarry,Hauling,Blaster,1.7,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,4,Night,SYNTHETIC RECORD - demo only
+SYN-00539,2024-02-10,Underground,Inspection,Mechanic,9.9,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,4,Day,SYNTHETIC RECORD - demo only
+SYN-00540,2023-07-30,Open-pit,Walking / travelling,Surveyor,1.2,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,11,Night,SYNTHETIC RECORD - demo only
+SYN-00541,2024-03-15,Underground,Inspection,Haul truck driver,2.8,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00542,2024-02-09,Open-pit,Maintenance,Haul truck driver,4.1,Entry into restricted / hazardous area,DAYS AWAY FROM WORK ONLY,3,14,Night,SYNTHETIC RECORD - demo only
+SYN-00543,2023-06-10,Open-pit,Drilling,Surveyor,6.3,Other / unclassified,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00544,2024-02-15,Open-pit,Walking / travelling,Supervisor,2.0,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00545,2024-10-14,Open-pit,Hauling,Mechanic,3.5,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00546,2024-03-06,Open-pit,Hauling,Driller,2.9,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,10,Night,SYNTHETIC RECORD - demo only
+SYN-00547,2023-04-01,Open-pit,Walking / travelling,Electrician,0.5,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00548,2024-01-04,Open-pit,Blasting preparation,Mechanic,1.6,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00549,2024-09-24,Open-pit,Walking / travelling,Labourer,1.2,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00550,2023-03-31,Underground,Hauling,Surveyor,9.3,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,56,Day,SYNTHETIC RECORD - demo only
+SYN-00551,2023-12-02,Open-pit,Walking / travelling,Haul truck driver,5.4,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00552,2024-12-03,Quarry,Drilling,Blaster,1.6,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00553,2023-03-31,Open-pit,Drilling,Mechanic,7.2,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00554,2023-05-21,Open-pit,Inspection,Surveyor,4.5,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,21,Day,SYNTHETIC RECORD - demo only
+SYN-00555,2023-03-20,Open-pit,Walking / travelling,Mechanic,5.0,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00556,2024-01-07,Open-pit,Maintenance,Haul truck driver,0.8,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00557,2024-08-09,Underground,Maintenance,Surveyor,6.1,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,3,Night,SYNTHETIC RECORD - demo only
+SYN-00558,2023-09-26,Open-pit,Walking / travelling,Driller,7.0,Entry into restricted / hazardous area,FATALITY,5,0,Night,SYNTHETIC RECORD - demo only
+SYN-00559,2024-09-30,Underground,Material handling,Surveyor,14.0,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00560,2024-11-30,Open-pit,Inspection,Supervisor,2.3,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00561,2024-03-20,Open-pit,Walking / travelling,Labourer,2.2,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,6,Day,SYNTHETIC RECORD - demo only
+SYN-00562,2023-09-02,Open-pit,Drilling,Mechanic,0.8,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,52,Day,SYNTHETIC RECORD - demo only
+SYN-00563,2023-09-09,Open-pit,Maintenance,Haul truck driver,5.1,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,22,Day,SYNTHETIC RECORD - demo only
+SYN-00564,2023-01-31,Open-pit,Maintenance,Loader operator,3.2,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,5,Day,SYNTHETIC RECORD - demo only
+SYN-00565,2024-05-22,Underground,Drilling,Surveyor,0.8,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,2,Night,SYNTHETIC RECORD - demo only
+SYN-00566,2024-06-12,Underground,Loading,Mechanic,7.7,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,53,Night,SYNTHETIC RECORD - demo only
+SYN-00567,2024-11-08,Open-pit,Drilling,Blaster,6.6,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,3,Day,SYNTHETIC RECORD - demo only
+SYN-00568,2023-11-09,Underground,Hauling,Surveyor,4.3,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,1,Night,SYNTHETIC RECORD - demo only
+SYN-00569,2024-05-12,Open-pit,Walking / travelling,Electrician,6.2,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,11,Night,SYNTHETIC RECORD - demo only
+SYN-00570,2023-03-04,Open-pit,Blasting preparation,Labourer,0.7,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,22,Day,SYNTHETIC RECORD - demo only
+SYN-00571,2023-10-28,Open-pit,Drilling,Driller,0.6,Other / unclassified,DAYS RESTRICTED ACTIVITY ONLY,2,1,Night,SYNTHETIC RECORD - demo only
+SYN-00572,2024-02-08,Underground,Maintenance,Blaster,3.3,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00573,2024-07-19,Open-pit,Maintenance,Loader operator,5.6,Improper PPE use,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00574,2023-04-18,Open-pit,Inspection,Blaster,7.1,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,15,Day,SYNTHETIC RECORD - demo only
+SYN-00575,2024-08-19,Quarry,Loading,Mechanic,6.7,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Day,SYNTHETIC RECORD - demo only
+SYN-00576,2024-06-18,Open-pit,Maintenance,Surveyor,5.5,Unsafe interaction with machinery,DAYS AWAY FROM WORK ONLY,3,10,Night,SYNTHETIC RECORD - demo only
+SYN-00577,2023-07-17,Underground,Blasting preparation,Blaster,12.1,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00578,2024-01-23,Open-pit,Hauling,Mechanic,2.5,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,11,Night,SYNTHETIC RECORD - demo only
+SYN-00579,2023-02-10,Underground,Loading,Surveyor,5.3,Improper PPE use,DAYS RESTRICTED ACTIVITY ONLY,2,2,Night,SYNTHETIC RECORD - demo only
+SYN-00580,2024-05-13,Open-pit,Inspection,Loader operator,1.0,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,59,Night,SYNTHETIC RECORD - demo only
+SYN-00581,2023-09-25,Quarry,Drilling,Supervisor,3.0,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,71,Day,SYNTHETIC RECORD - demo only
+SYN-00582,2023-06-23,Open-pit,Blasting preparation,Surveyor,3.8,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,13,Day,SYNTHETIC RECORD - demo only
+SYN-00583,2024-04-02,Quarry,Maintenance,Blaster,3.2,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,11,Night,SYNTHETIC RECORD - demo only
+SYN-00584,2023-12-08,Open-pit,Drilling,Haul truck driver,2.8,Entry into restricted / hazardous area,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00585,2023-11-10,Underground,Hauling,Driller,1.3,Entry into restricted / hazardous area,DAYS AWAY FROM WORK ONLY,3,21,Day,SYNTHETIC RECORD - demo only
+SYN-00586,2024-09-06,Open-pit,Material handling,Blaster,11.1,Other / unclassified,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00587,2023-09-27,Open-pit,Hauling,Supervisor,6.0,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,4,Night,SYNTHETIC RECORD - demo only
+SYN-00588,2023-07-30,Open-pit,Drilling,Blaster,7.8,Entry into restricted / hazardous area,FATALITY,5,0,Day,SYNTHETIC RECORD - demo only
+SYN-00589,2023-09-01,Underground,Drilling,Loader operator,4.8,Unsafe movement / working practice,DAYS RESTRICTED ACTIVITY ONLY,2,2,Day,SYNTHETIC RECORD - demo only
+SYN-00590,2023-04-25,Open-pit,Maintenance,Surveyor,10.1,Other / unclassified,DAYS AWAY FROM WORK ONLY,3,10,Day,SYNTHETIC RECORD - demo only
+SYN-00591,2024-12-18,Underground,Loading,Surveyor,8.4,Unsafe movement / working practice,"NO DYS AWY FRM WRK,NO RSTR ACT",1,0,Night,SYNTHETIC RECORD - demo only
+SYN-00592,2024-06-07,Underground,Blasting preparation,Supervisor,5.6,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,16,Day,SYNTHETIC RECORD - demo only
+SYN-00593,2024-03-02,Open-pit,Inspection,Mechanic,7.8,Entry into restricted / hazardous area,DAYS AWAY FROM WORK ONLY,3,14,Day,SYNTHETIC RECORD - demo only
+SYN-00594,2024-10-26,Open-pit,Blasting preparation,Mechanic,9.5,Entry into restricted / hazardous area,PERM TOT OR PERM PRTL DISABLTY,4,44,Day,SYNTHETIC RECORD - demo only
+SYN-00595,2023-07-29,Underground,Blasting preparation,Mechanic,9.3,Unsafe movement / working practice,DAYS AWAY FROM WORK ONLY,3,11,Night,SYNTHETIC RECORD - demo only
+SYN-00596,2023-08-16,Underground,Loading,Mechanic,2.7,Entry into restricted / hazardous area,DAYS AWAY FROM WORK ONLY,3,7,Day,SYNTHETIC RECORD - demo only
+SYN-00597,2023-03-24,Underground,Maintenance,Driller,2.0,Improper PPE use,PERM TOT OR PERM PRTL DISABLTY,4,65,Day,SYNTHETIC RECORD - demo only
+SYN-00598,2023-10-02,Underground,Material handling,Driller,6.8,Unsafe interaction with machinery,DAYS RESTRICTED ACTIVITY ONLY,2,1,Day,SYNTHETIC RECORD - demo only
+SYN-00599,2024-03-07,Open-pit,Drilling,Driller,3.2,Improper PPE use,DAYS AWAY FROM WORK ONLY,3,19,Night,SYNTHETIC RECORD - demo only

@@ -1,0 +1,14 @@
+# Python 3.10 - 3.12 recommended
+fastapi>=0.110
+uvicorn[standard]>=0.29
+python-multipart>=0.0.9
+ultralytics>=8.3.0        # YOLO11 + ByteTrack (installs torch, opencv-python)
+opencv-python>=4.9
+lap>=0.5.12               # required by ByteTrack tracker
+numpy>=1.26
+pandas>=2.1
+scipy>=1.11
+matplotlib>=3.8
+pytest>=8.0
+# optional: dataset download from Roboflow
+# roboflow>=1.1
