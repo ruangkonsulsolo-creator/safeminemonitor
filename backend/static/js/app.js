@@ -7,14 +7,19 @@ const api = async (url, opt) => {
 };
 const pct = (v) => (v === null || v === undefined ? "–" : (v * 100).toFixed(1) + "%");
 const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fmtTime = (s) => { if (!s) return "–"; const d = new Date(s); return isNaN(d) ? esc(s) : d.toLocaleString("en-GB", { day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" }); };
 const lvl = (l) => (l ? `<span class="lvl ${l}">${l}</span>` : "–");
-const CAT_COLORS = { NO_HELMET: "#f85149", NO_VEST: "#f0883e", RESTRICTED_ZONE: "#bc8cff", MACHINE_PROXIMITY: "#ff6b9a" };
+const CAT_COLORS = { NO_HELMET: "#dc2626", NO_VEST: "#f9a700", RESTRICTED_ZONE: "#03466e", MACHINE_PROXIMITY: "#7c3aed" };
+const NAVY = "#03466e", AMBER = "#f9a700", GREEN = "#16a34a";
 const charts = {};
 function chart(id, cfg) {
   if (!window.Chart) return;
   if (charts[id]) charts[id].destroy();
-  Chart.defaults.color = "#8aa0b5";
-  Chart.defaults.borderColor = "#26384b";
+  Chart.defaults.color = "#64748b";
+  Chart.defaults.borderColor = "#eef2f6";
+  Chart.defaults.font.family = "Inter, -apple-system, Segoe UI, sans-serif";
+  Chart.defaults.plugins.legend.labels.usePointStyle = true;
+  cfg.options = Object.assign({ responsive: true, maintainAspectRatio: false }, cfg.options || {});
   charts[id] = new Chart(document.getElementById(id), cfg);
 }
 
@@ -23,7 +28,11 @@ const loaders = {};
 document.querySelectorAll("nav a").forEach((a) =>
   a.addEventListener("click", () => show(a.dataset.page))
 );
+const TITLES = { dashboard: "Dashboard", upload: "Upload & Detect", monitor: "Monitoring", records: "Detection Records",
+  risk: "Risk Assessment", analytics: "Python Analytics", egt: "EGT Simulation", validation: "Validation", about: "Methodology" };
 function show(page) {
+  $("#crumbTitle").textContent = TITLES[page] || page;
+  window.scrollTo({ top: 0 });
   document.querySelectorAll("nav a").forEach((x) => x.classList.toggle("active", x.dataset.page === page));
   document.querySelectorAll(".page").forEach((x) => x.classList.toggle("active", x.id === "page-" + page));
   if (loaders[page]) loaders[page]().catch((e) => console.error(e));
@@ -34,8 +43,8 @@ async function loadModel() {
   try {
     const m = await api("/api/model");
     if (!m.loaded) { $("#modelBox").innerHTML = `<b style="color:#f85149">Model not loaded</b><br>${esc(m.error)}`; return; }
-    const caps = Object.entries(m.capabilities).map(([k, v]) => `${v ? "✔" : "✖"} ${k}`).join("<br>");
-    $("#modelBox").innerHTML = `<b>${esc(m.name)}</b> ${m.is_custom ? "(custom PPE)" : "(COCO fallback)"}<br>${caps}`;
+    const caps = Object.entries(m.capabilities).map(([k, v]) => `<div class="cap ${v ? "on" : "off"}">${v ? "●" : "○"} ${k.replace("_", " ")}</div>`).join("");
+    $("#modelBox").innerHTML = `<div style="font-weight:600;color:#14273a">Detection model</div><b>${esc(m.name)}</b> <span class="hint">${m.is_custom ? "custom PPE" : "COCO fallback"}</span>${caps}`;
   } catch (e) { $("#modelBox").textContent = "Model: API offline"; }
 }
 
@@ -50,16 +59,17 @@ loaders.dashboard = async () => {
   $("#kHelmet").textContent = pct(d.totals.helmet_compliance_rate);
   const cats = Object.keys(d.by_category);
   chart("chCat", { type: "bar", data: { labels: cats.map((c) => d.categories[c] || c),
-    datasets: [{ data: cats.map((c) => d.by_category[c]), backgroundColor: cats.map((c) => CAT_COLORS[c] || "#4c9aff") }] },
-    options: { indexAxis: "y", plugins: { legend: { display: false } } } });
+    datasets: [{ data: cats.map((c) => d.by_category[c]), backgroundColor: cats.map((c) => CAT_COLORS[c] || NAVY), borderRadius: 6, barThickness: 22 }] },
+    options: { indexAxis: "y", plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true, ticks: { precision: 0 } }, y: { grid: { display: false } } } } });
   chart("chLevel", { type: "doughnut", data: { labels: Object.keys(d.by_level),
-    datasets: [{ data: Object.values(d.by_level), backgroundColor: ["#3fb950", "#f0883e", "#f85149"] }] } });
+    datasets: [{ data: Object.values(d.by_level), backgroundColor: ["#16a34a", "#f9a700", "#dc2626"], borderWidth: 3, borderColor: "#fff" }] },
+    options: { cutout: "68%", plugins: { legend: { position: "bottom" } } } });
   $("#recent").innerHTML = d.recent_events.length ? d.recent_events.map((e) => `
     <div class="ev">${e.snapshot ? `<img src="${e.snapshot}">` : `<img>`}
       <div><b>${esc(e.label)}</b><br>${esc(e.camera)} · t=${e.start_s}s ${lvl(e.risk_level)}</div></div>`).join("")
-    : '<p class="hint">No detections yet. Go to “Upload & Detect”.</p>';
+    : '<div class="empty">No detections yet — start with <a class="link" onclick="show(\'upload\')">Upload &amp; Detect</a>.</div>';
   $("#histTbl").innerHTML = "<tr><th>Time</th><th>Camera</th><th>File</th><th>Events</th><th>Risk</th></tr>" +
-    d.history.map((h) => `<tr class="click" data-id="${h.id}"><td>${esc(h.created_at)}</td><td>${esc(h.camera)}</td>
+    d.history.map((h) => `<tr class="click" data-id="${h.id}"><td>${fmtTime(h.created_at)}</td><td>${esc(h.camera)}</td>
       <td>${esc(h.filename)}</td><td>${h.events ?? h.status}</td><td>${lvl(h.overall_risk)}</td></tr>`).join("");
   document.querySelectorAll("#histTbl tr.click").forEach((r) => r.addEventListener("click", () => openJob(r.dataset.id)));
 };
@@ -71,13 +81,13 @@ const cv = $("#zoneCanvas"), ctx = cv.getContext("2d");
 function drawZone() {
   ctx.fillStyle = "#000"; ctx.fillRect(0, 0, cv.width, cv.height);
   if (zoneImg) ctx.drawImage(zoneImg, 0, 0, cv.width, cv.height);
-  else { ctx.fillStyle = "#8aa0b5"; ctx.font = "14px sans-serif"; ctx.fillText("Select a video/image to preview the first frame", 150, 180); }
+  else { ctx.fillStyle = "#94a3b8"; ctx.font = "15px Inter, sans-serif"; ctx.textAlign = "center"; ctx.fillText("Select a video or image to preview the first frame", cv.width / 2, cv.height / 2); ctx.textAlign = "start"; }
   if (zone.length) {
-    ctx.strokeStyle = "#f85149"; ctx.fillStyle = "rgba(248,81,73,.25)"; ctx.lineWidth = 2; ctx.beginPath();
+    ctx.strokeStyle = "#f9a700"; ctx.fillStyle = "rgba(249,167,0,.28)"; ctx.lineWidth = 2; ctx.beginPath();
     zone.forEach(([x, y], i) => (i ? ctx.lineTo(x * cv.width, y * cv.height) : ctx.moveTo(x * cv.width, y * cv.height)));
     if (zone.length > 2) ctx.closePath();
     ctx.fill(); ctx.stroke();
-    zone.forEach(([x, y]) => { ctx.fillStyle = "#f85149"; ctx.fillRect(x * cv.width - 3, y * cv.height - 3, 6, 6); });
+    zone.forEach(([x, y]) => { ctx.fillStyle = "#f9a700"; ctx.fillRect(x * cv.width - 3, y * cv.height - 3, 6, 6); });
   }
   $("#zoneInfo").textContent = zone.length ? `${zone.length} points` : "no zone";
 }
@@ -96,10 +106,10 @@ function setPreview(src, isVideo) {
 }
 function fitCanvas(w, h) { cv.width = 640; cv.height = Math.round(640 * h / w); drawZone(); }
 $("#fileInput").onchange = (e) => {
-  const f = e.target.files[0]; if (!f) return; $("#sampleSelect").value = "";
+  const f = e.target.files[0]; if (!f) return; $("#sampleSelect").value = ""; $("#fileName").textContent = "✓ " + f.name;
   setPreview(URL.createObjectURL(f), f.type.startsWith("video"));
 };
-$("#sampleSelect").onchange = (e) => { if (e.target.value) { $("#fileInput").value = ""; setPreview(`/api/samples/${encodeURIComponent(e.target.value)}/frame`, false); } };
+$("#sampleSelect").onchange = (e) => { if (e.target.value) { $("#fileInput").value = ""; $("#fileName").textContent = ""; setPreview(`/api/samples/${encodeURIComponent(e.target.value)}/frame`, false); } };
 loaders.upload = async () => {
   const s = await api("/api/samples");
   $("#sampleSelect").innerHTML = '<option value="">(none)</option>' + s.samples.map((n) => `<option>${esc(n)}</option>`).join("");
@@ -146,10 +156,22 @@ async function startMonitor(id) {
 function renderWorkers(ws) {
   const yn = (v) => `<span class="${v === "Yes" ? "yes" : v === "No" ? "no" : "unk"}">${v === "Yes" ? "✔ Yes" : v === "No" ? "✖ No" : "? Unknown"}</span>`;
   const b = (v, good) => `<span class="${v ? (good ? "yes" : "no") : "yes"}">${v ? "⚠ Yes" : "No"}</span>`;
-  $("#workerPanel").innerHTML = (ws || []).map((w) => `<div class="w"><b>Worker ID: W${w.track_id}</b>
+  $("#workerPanel").innerHTML = (ws || []).map((w) => `<div class="w ${(w.violations || []).length ? "bad" : ""}"><b>Worker ID: W${w.track_id}</b>
     <div class="row">Helmet ${yn(w.helmet)}</div><div class="row">High-vis vest ${yn(w.vest)}</div>
     <div class="row">In restricted zone ${b(w.in_zone)}</div><div class="row">Near machinery ${b(w.near_machine)}</div></div>`).join("")
     || '<p class="hint">No worker in the current frame.</p>';
+}
+function renderWorkerSummary(ev, nWorkers) {
+  const by = {};
+  ev.forEach((e) => { (by[e.track_id] = by[e.track_id] || new Set()).add(e.category); });
+  const has = (set, c) => set.has(c);
+  const yn = (bad) => bad ? '<span class="no">✖ Violation</span>' : '<span class="yes">✔ OK</span>';
+  const ids = Object.keys(by);
+  $("#workerPanel").innerHTML = `<p class="wsum">${nWorkers ?? "–"} workers tracked · ${ids.length} with unsafe events</p>` +
+    (ids.map((id) => { const s = by[id]; return `<div class="w bad"><b>Worker ID: W${id}</b>
+      <div class="row">Helmet ${yn(has(s, "NO_HELMET"))}</div><div class="row">High-vis vest ${yn(has(s, "NO_VEST"))}</div>
+      <div class="row">Restricted zone ${yn(has(s, "RESTRICTED_ZONE"))}</div><div class="row">Machinery proximity ${yn(has(s, "MACHINE_PROXIMITY"))}</div></div>`; }).join("")
+     || '<div class="empty">No unsafe behaviour detected 🎉</div>');
 }
 async function finishMonitor(j) {
   $("#progBar").style.width = "100%";
@@ -164,6 +186,7 @@ async function finishMonitor(j) {
   } else { $("#streamImg").src = j.output_path + "?ts=" + Date.now(); renderWorkers(s.workers); }
   $("#downloadBtn").href = j.output_path || "#";
   const ev = await api(`/api/jobs/${j.id}/events`);
+  if (j.media_type === "video") renderWorkerSummary(ev, s.unique_workers);
   $("#eventTbl").innerHTML = "<tr><th>Snapshot</th><th>Worker</th><th>Category</th><th>Time (s)</th><th>Conf.</th><th>Exposure</th><th>L×S</th><th>Risk</th><th>Recommendation</th></tr>" +
     ev.map((e) => `<tr><td>${e.snapshot ? `<a href="${e.snapshot}" target="_blank"><img class="snap" src="${e.snapshot}"></a>` : ""}</td>
       <td>W${e.track_id}</td><td>${esc(e.label)}</td><td>${e.start_s} – ${e.end_s}<br><span class="hint">${e.duration_s}s</span></td>
@@ -176,7 +199,7 @@ $("#replayBtn").onclick = () => { if (currentJob) $("#streamImg").src = `/api/jo
 loaders.records = async () => {
   const js = await api("/api/jobs");
   $("#jobsTbl").innerHTML = "<tr><th>Created</th><th>File</th><th>Type</th><th>Camera</th><th>Status</th><th>Events</th><th>UBR</th><th>Risk</th><th></th></tr>" +
-    js.map((j) => `<tr class="click" data-id="${j.id}"><td>${esc(j.created_at)}</td><td>${esc(j.filename)}</td><td>${j.media_type}</td>
+    js.map((j) => `<tr class="click" data-id="${j.id}"><td>${fmtTime(j.created_at)}</td><td>${esc(j.filename)}</td><td>${j.media_type}</td>
       <td>${esc(j.camera)}</td><td>${j.status}</td><td>${j.summary?.events_total ?? "–"}</td><td>${pct(j.summary?.unsafe_behaviour_rate)}</td>
       <td>${lvl(j.summary?.risk?.overall_level)}</td><td><button class="btn del" data-id="${j.id}">🗑</button></td></tr>`).join("");
   document.querySelectorAll("#jobsTbl tr.click").forEach((r) => r.addEventListener("click", (e) => {
@@ -190,9 +213,9 @@ function confirmDelete(b) { if (b.dataset.armed) return true; b.dataset.armed = 
 loaders.risk = async () => {
   const r = await api("/api/risk");
   const band = (s) => (s >= 15 ? "High" : s >= 5 ? "Medium" : "Low");
-  let h = '<div class="matrix"><div></div>' + [1, 2, 3, 4, 5].map((s) => `<div><b>S${s}</b></div>`).join("");
+  let h = '<div class="matrix"><div class="ax"></div>' + [1, 2, 3, 4, 5].map((s) => `<div class="ax">S${s}</div>`).join("");
   for (let L = 5; L >= 1; L--) {
-    h += `<div><b>L${L}</b></div>`;
+    h += `<div class="ax">L${L}</div>`;
     for (let S = 1; S <= 5; S++) { const n = r.cells[`${L}-${S}`] || 0; h += `<div class="cell ${band(L * S)}">${L * S}${n ? `<br><b>${n} ev</b>` : ""}</div>`; }
   }
   $("#matrix").innerHTML = h + "</div>";
@@ -218,12 +241,12 @@ loaders.analytics = async () => {
   if (inc.pareto_category) {
     const p = inc.pareto_category;
     chart("chPareto", { data: { labels: p.map((x) => x.label), datasets: [
-      { type: "bar", label: "Count", data: p.map((x) => x.count), backgroundColor: "#4c9aff", yAxisID: "y" },
-      { type: "line", label: "Cumulative %", data: p.map((x) => x.cum_pct), borderColor: "#f5a524", yAxisID: "y1" }] },
+      { type: "bar", label: "Count", data: p.map((x) => x.count), backgroundColor: NAVY, borderRadius: 6, yAxisID: "y" },
+      { type: "line", label: "Cumulative %", data: p.map((x) => x.cum_pct), borderColor: AMBER, backgroundColor: AMBER, tension: .3, yAxisID: "y1" }] },
       options: { scales: { y1: { position: "right", max: 100, min: 0 } } } });
-    chart("chTrend", { type: "line", data: { labels: inc.monthly_trend.labels, datasets: [{ label: "Records", data: inc.monthly_trend.values, borderColor: "#3fb950" }] } });
+    chart("chTrend", { type: "line", data: { labels: inc.monthly_trend.labels, datasets: [{ label: "Records", data: inc.monthly_trend.values, borderColor: NAVY, backgroundColor: "rgba(3,70,110,.08)", fill: true, tension: .35, pointRadius: 2 }] } });
     chart("chSev", { type: "bar", data: { labels: Object.keys(inc.severity_distribution).map((k) => "S" + k),
-      datasets: [{ label: "Records", data: Object.values(inc.severity_distribution), backgroundColor: "#f0883e" }] } });
+      datasets: [{ label: "Records", data: Object.values(inc.severity_distribution), backgroundColor: AMBER, borderRadius: 6 }] } });
     $("#briTbl").innerHTML = "<tr><th>Category</th><th>n</th><th>Share</th><th>Mean S</th><th>Days lost</th><th>Fatal</th><th>BRI</th></tr>" +
       inc.category_indicators.map((r) => `<tr><td>${esc(r.category)}</td><td>${r.n}</td><td>${pct(r.share)}</td><td>${r.mean_severity}</td><td>${r.days_lost}</td><td>${r.fatal}</td><td><b>${r.bri}</b></td></tr>`).join("");
     const xt = inc.experience_crosstab, cs = xt.chi_square;
@@ -273,16 +296,16 @@ async function runEgt() {
     sensitivity: { param: $("#sensParam").value, range: [+$("#sensLo").value, +$("#sensHi").value, 13] } };
   const r = await api("/api/egt/simulate", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
   chart("chEgt", { type: "line", data: { labels: r.t, datasets: [
-    { label: "x: workers safe", data: r.x, borderColor: "#3fb950", pointRadius: 0 },
-    { label: "y: supervisors strict", data: r.y, borderColor: "#4c9aff", pointRadius: 0 },
-    { label: "z: management invests", data: r.z, borderColor: "#f5a524", pointRadius: 0 }] },
+    { label: "x: workers safe", data: r.x, borderColor: GREEN, borderWidth: 2.5, pointRadius: 0 },
+    { label: "y: supervisors strict", data: r.y, borderColor: NAVY, borderWidth: 2.5, pointRadius: 0 },
+    { label: "z: management invests", data: r.z, borderColor: AMBER, borderWidth: 2.5, pointRadius: 0 }] },
     options: { scales: { y: { min: 0, max: 1 }, x: { ticks: { maxTicksLimit: 11 } } } } });
   const f = r.final, ta = r.time_average;
   $("#egtFinal").textContent = `Final state (t=50): x=${f.x.toFixed(3)}, y=${f.y.toFixed(3)}, z=${f.z.toFixed(3)} · time-average (2nd half): x=${ta.x.toFixed(3)}, y=${ta.y.toFixed(3)}, z=${ta.z.toFixed(3)} · detection prob. with investment: strict ${r.detection_probabilities.strict_invest}, lax ${r.detection_probabilities.lax_invest}`;
   const s = r.sensitivity.results;
   chart("chSens", { type: "line", data: { labels: s.map((v) => v.value.toFixed(1)), datasets: [
-    { label: "x", data: s.map((v) => v.x), borderColor: "#3fb950" }, { label: "y", data: s.map((v) => v.y), borderColor: "#4c9aff" },
-    { label: "z", data: s.map((v) => v.z), borderColor: "#f5a524" }] },
+    { label: "x", data: s.map((v) => v.x), borderColor: GREEN, backgroundColor: GREEN }, { label: "y", data: s.map((v) => v.y), borderColor: NAVY, backgroundColor: NAVY },
+    { label: "z", data: s.map((v) => v.z), borderColor: AMBER, backgroundColor: AMBER }] },
     options: { scales: { y: { min: 0, max: 1 }, x: { title: { display: true, text: r.sensitivity.param } } } } });
   $("#eqTbl").innerHTML = "<tr><th>Point</th><th>Meaning</th><th>Eigenvalues</th><th>Stability</th></tr>" +
     r.equilibria.map((e) => `<tr><td>${e.point}</td><td class="hint">${e.meaning}</td><td>${e.eigenvalues.join(", ")}</td><td>${e.stability}</td></tr>`).join("");
@@ -315,6 +338,8 @@ $("#valBtn").onclick = async () => {
 };
 
 /* ---------------------------------------------------------------- init */
+const tick = () => { $("#clock").textContent = new Date().toLocaleString("en-GB", { weekday: "short", day: "2-digit", month: "short", hour: "2-digit", minute: "2-digit" }); };
+tick(); setInterval(tick, 30000);
 loadModel();
 loaders.dashboard().catch(console.error);
 setInterval(() => { if ($("#page-dashboard").classList.contains("active")) loaders.dashboard().catch(() => {}); }, 8000);
